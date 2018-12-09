@@ -6,7 +6,7 @@ public class DeactivationTriggerScript : MonoBehaviour {
     [Tooltip("Every object in this list will be deactivated if something enters the trigger")]
     public List<GameObject> activationList = new List<GameObject>();
 
-    private void OnTriggerEnter(object other)
+    private void OnTriggerEnter(Collider other)
     {
         foreach (GameObject obj in activationList)
         {
