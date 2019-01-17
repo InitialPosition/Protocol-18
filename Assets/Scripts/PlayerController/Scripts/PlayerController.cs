@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 10.0f;
 	public float jumpSpeed = 5.0f;
+    [Range (0.1f, 10.0f)]
+    public float pickUpRange;
 	float hInput, vInput;
 
     private Rigidbody rb;
@@ -19,7 +21,6 @@ public class PlayerController : MonoBehaviour {
     void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
 		rb = GetComponent<Rigidbody>();
-
 		distToGround = gameObject.GetComponent<Collider>().bounds.extents.y;
         loaded = false;
 	}
@@ -31,13 +32,7 @@ public class PlayerController : MonoBehaviour {
 
 		hInput *= Time.deltaTime;
 		vInput *= Time.deltaTime;
-        #region loading
-        if (loaded && load != null)
-        {
-            load.transform.position = transform.GetChild(0).transform.position;
-        }
-        #endregion  // This fixes the target to the player every frame
-        if (Input.GetButtonDown("Jump") && isGrounded()) {
+        if (Input.GetButtonDown("Jump") && IsGrounded()) {
 			rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
 		}
 
@@ -49,38 +44,70 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            
-            if (Physics.Raycast(ray, out hit, 100))
+            if (loaded)
             {
-                Debug.Log(hit.collider.gameObject.name);
-                if(loaded)
+                UnloadTarget();
+            }
+            else
+            {
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit, pickUpRange))
                 {
-                    unloadTarget();
-                }else
-                {
-                    loadTarget(hit.collider.gameObject);
-                }
-            }      
+                    if (hit.transform.tag == "InteractableObject" || hit.transform.tag == "Tetrahedra")
+                    {
+                        //Debug.Log(hit.collider.gameObject.name);
+                        LoadTarget(hit.collider.gameObject);
+                    }else if(hit.transform.tag == "EnergyStand")
+                    {
+                        LoadTarget(hit.transform.GetComponent<EnergyStandScript>().ReleaseObjectToPlayer());
+                    }
+                }  
+            }        
         }
     }
 
-	private bool isGrounded() {
+    public GameObject GetLoad()
+    {
+        return load;
+    }
+
+    public void CallToUnload()
+    {
+        if (loaded)
+        {
+            UnloadTarget();
+        }
+        Debug.Log("Called to Unload");
+    }
+
+    private bool IsGrounded() {
    		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
  	}
 
-    private void loadTarget(GameObject target)
+    private void LoadTarget(GameObject target)
     {
         loaded = true;
         load = target;
+        // Edit the picked up object to work as expected while in the players hands
+        if (load.gameObject.tag == "Tetrahedra")
+        {
+            load.transform.localScale = new Vector3(60, 60, 60);
+        }
+        load.transform.parent = transform.GetChild(0).GetChild(0).transform; // Sets the Holdpoint as the parent of object
         load.GetComponent<Collider>().isTrigger = true;
         load.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        load.transform.localPosition = Vector3.zero;
     }
 
-    private void unloadTarget()
+    private void UnloadTarget()
     {
         load.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-       
+        load.GetComponent<Collider>().isTrigger = false;
+        load.transform.parent = null; // if the object had a parent at some point, then the parent needs to be saved and used here
+        if (load.gameObject.tag == "Tetrahedra")
+        {
+            load.transform.localScale = new Vector3(100, 100, 100); // Shouldnt be hard coded, but is for now
+        }
         loaded = false;
         load = null;
     }
