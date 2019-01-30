@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 10.0f;
 	public float jumpSpeed = 5.0f;
+    [Range (100f, 10000.0f)]
+    public float throwForce = 1.0f;
     [Range (0.1f, 10.0f)]
     public float pickUpRange;
 	float hInput, vInput;
@@ -14,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     private Ray ray;
     private RaycastHit hit;
     private GameObject load;
+    private GameObject temp;
     private float distToGround;
     private bool loaded;
 
@@ -41,6 +44,11 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown("escape")) {
 			Cursor.lockState = CursorLockMode.None;
 		}
+
+        if (Input.GetMouseButtonDown(0) && loaded)
+        {
+            ThrowTarget();
+        }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -110,5 +118,14 @@ public class PlayerController : MonoBehaviour {
         }
         loaded = false;
         load = null;
+    }
+
+    private void ThrowTarget()
+    {
+        temp = load;
+        UnloadTarget();
+        temp.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce);
+        temp = null;
+
     }
 }
