@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class LevelChangerScript : MonoBehaviour {
 
-    public static void LoadFirstLevel()
+    public void LoadFirstLevel()
     {
         SceneManager.LoadScene("TutorialScene");
     }
 
-    public static void LoadMainMenu()
+    public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");            
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
