@@ -266,7 +266,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpSpeed: 7
-  pickUpRange: 10
+  throwForce: 300
+  pickUpRange: 2
+  currentSpawn: {fileID: 0}
 --- !u!114 &114403882415897088
 MonoBehaviour:
   m_ObjectHideFlags: 1
