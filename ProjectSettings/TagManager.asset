@@ -7,7 +7,6 @@ TagManager:
   - Tetrahedra
   - InteractableObject
   - EnergyStand
-  - Hazard
   layers:
   - Default
   - TransparentFX
