@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     public float throwForce = 1.0f;
     [Range (0.1f, 10.0f)]
     public float pickUpRange;
+    public GameObject currentSpawn;
 	float hInput, vInput;
 
     private Rigidbody rb;
@@ -71,6 +72,17 @@ public class PlayerController : MonoBehaviour {
                     }
                 }  
             }        
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Hazard")
+        {
+            Debug.Log("Hazard hit, respawning...");
+
+            this.transform.position = currentSpawn.transform.position;
+            this.transform.rotation = currentSpawn.transform.rotation;
         }
     }
 
