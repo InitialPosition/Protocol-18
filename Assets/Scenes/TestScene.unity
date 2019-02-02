@@ -1241,7 +1241,7 @@ Prefab:
     - target: {fileID: 114066002775044998, guid: f36c1ca6e1338cf49a598bb23d736426,
         type: 2}
       propertyPath: pickUpRange
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114066002775044998, guid: f36c1ca6e1338cf49a598bb23d736426,
         type: 2}
