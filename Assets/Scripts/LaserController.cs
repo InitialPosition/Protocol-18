@@ -13,6 +13,8 @@ public class LaserController : MonoBehaviour {
 	void Start () {
 		// create laser beam as child
 		laserBeam = (GameObject) Instantiate(LaserBeam, transform.position, transform.rotation);
+		laserChild = laserBeam.transform.GetChild(0).gameObject;
+		laserChild.gameObject.tag = "Hazard";
 
 		// get distance to next wall and scale laser accordingly
 		Ray distanceRay = new Ray(transform.position, new Vector3(transform.rotation.x, transform.rotation.y, transform.rotation.z));

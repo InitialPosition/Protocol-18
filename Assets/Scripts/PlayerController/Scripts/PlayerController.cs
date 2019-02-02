@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     private RaycastHit hit;
     private GameObject item;        // What item the player is currently holding
     private GameObject temp;
+    public GameObject currentSpawn;
     private float distToGround;
     private bool handsFull;         // States if the hands of the player are full
 
@@ -71,6 +72,15 @@ public class PlayerController : MonoBehaviour {
                     }
                 }  
             }        
+        }
+    }
+
+    public void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Hazard") {
+            Debug.Log("Hazard hit, respawning...");
+
+            this.transform.position = currentSpawn.transform.position;
+            this.transform.rotation = currentSpawn.transform.rotation;
         }
     }
 
