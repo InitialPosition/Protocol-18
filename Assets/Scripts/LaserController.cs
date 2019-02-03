@@ -8,7 +8,7 @@ public class LaserController : MonoBehaviour
     public GameObject LaserBeam;
 
     private GameObject laserChild, laserBeam;
-    private float laserLength = 100f;
+    private float laserLength = 26f;
     void Start()
     {
         // create laser beam as child
