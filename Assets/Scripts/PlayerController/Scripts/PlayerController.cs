@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
     private GameObject temp;
     private float distToGround;
     private bool handsFull;         // States if the hands of the player are full
+    private GameObject hud;
 
     // Use this for initialization
     void Start () {
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 		distToGround = gameObject.GetComponent<Collider>().bounds.extents.y;
         handsFull = false;
+
+        hud = GameObject.Find("HUD");
 	}
 	
 	// Update is called once per frame
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour {
 
 		hInput *= Time.deltaTime;
 		vInput *= Time.deltaTime;
+
         if (Input.GetButtonDown("Jump") && IsGrounded()) {
 			rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
 		}
@@ -44,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKeyDown("escape")) {
 			Cursor.lockState = CursorLockMode.None;
+            hud.GetComponent<PauseMenuScript>().openPauseMenu();
 		}
 
         if (Input.GetMouseButtonDown(0) && handsFull)
