@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour {
         {
             Debug.Log("Hazard hit, respawning...");
 
+            gameObject.GetComponent<AudioSource>().Play();
             if (handsFull) {
                 PutTargetDown();
             }
