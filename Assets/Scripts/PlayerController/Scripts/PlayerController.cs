@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour {
                     {
                         //Debug.Log(hit.collider.gameObject.name);
                         PickUpTarget(hit.collider.gameObject);
-                    }else if(hit.transform.tag == "EnergyStand")
+                    } else if(hit.transform.tag == "EnergyStand")
                     {
                         PickUpTarget(hit.transform.GetComponent<EnergyStandScript>().ReleaseObjectToPlayer());
                     }
@@ -80,6 +80,10 @@ public class PlayerController : MonoBehaviour {
         if (other.gameObject.tag == "Hazard")
         {
             Debug.Log("Hazard hit, respawning...");
+
+            if (handsFull) {
+                PutTargetDown();
+            }
 
             this.transform.position = currentSpawn.transform.position;
             this.transform.rotation = currentSpawn.transform.rotation;

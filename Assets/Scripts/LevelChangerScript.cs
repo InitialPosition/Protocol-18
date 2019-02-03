@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelChangerScript : MonoBehaviour {
 
-    public void LoadFirstLevel()
+    public string levelToLoad;
+
+    public void OnTriggerEnter(Collider other) {
+        if (other.gameObject.name == "Player(Clone)") {
+            LoadLevel();
+        }
+    }
+
+    public void LoadLevel()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene(levelToLoad);
     }
 
     public void LoadMainMenu()
