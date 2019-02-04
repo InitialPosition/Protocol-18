@@ -39,9 +39,9 @@ public class EnergyStandScript : MonoBehaviour
 
     private void UseObject(Collider obj)
     {
-        if (obj.gameObject == GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().GetLoad())
+        if (obj.gameObject == GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().GetItem())
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().CallToUnload();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().CallToPutTargetDown();
         }
 
         // Deactivate the objects

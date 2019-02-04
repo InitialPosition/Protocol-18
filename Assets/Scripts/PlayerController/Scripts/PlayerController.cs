@@ -6,23 +6,30 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 10.0f;
 	public float jumpSpeed = 5.0f;
+    [Range (100f, 10000.0f)]
+    public float throwForce = 1.0f;
     [Range (0.1f, 10.0f)]
     public float pickUpRange;
+    public GameObject currentSpawn;
 	float hInput, vInput;
 
     private Rigidbody rb;
     private Ray ray;
     private RaycastHit hit;
-    private GameObject load;
+    private GameObject item;        // What item the player is currently holding
+    private GameObject temp;
     private float distToGround;
-    private bool loaded;
+    private bool handsFull;         // States if the hands of the player are full
+    private GameObject hud;
 
     // Use this for initialization
     void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
 		rb = GetComponent<Rigidbody>();
 		distToGround = gameObject.GetComponent<Collider>().bounds.extents.y;
-        loaded = false;
+        handsFull = false;
+
+        hud = GameObject.Find("HUD");
 	}
 	
 	// Update is called once per frame
@@ -32,6 +39,7 @@ public class PlayerController : MonoBehaviour {
 
 		hInput *= Time.deltaTime;
 		vInput *= Time.deltaTime;
+
         if (Input.GetButtonDown("Jump") && IsGrounded()) {
 			rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
 		}
@@ -40,13 +48,26 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKeyDown("escape")) {
 			Cursor.lockState = CursorLockMode.None;
+            if (hud.GetComponent<PauseMenuScript>().MenuVisible())
+            {
+                hud.GetComponent<PauseMenuScript>().backToGame();
+            } else
+            {
+                hud.GetComponent<PauseMenuScript>().openPauseMenu();
+            }
+            
 		}
+
+        if (Input.GetMouseButtonDown(0) && handsFull)
+        {
+            ThrowTarget();
+        }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (loaded)
+            if (handsFull)
             {
-                UnloadTarget();
+                PutTargetDown();
             }
             else
             {
@@ -56,59 +77,96 @@ public class PlayerController : MonoBehaviour {
                     if (hit.transform.tag == "InteractableObject" || hit.transform.tag == "Tetrahedra")
                     {
                         //Debug.Log(hit.collider.gameObject.name);
-                        LoadTarget(hit.collider.gameObject);
-                    }else if(hit.transform.tag == "EnergyStand")
+                        PickUpTarget(hit.collider.gameObject);
+                    } else if(hit.transform.tag == "EnergyStand")
                     {
-                        LoadTarget(hit.transform.GetComponent<EnergyStandScript>().ReleaseObjectToPlayer());
+                        PickUpTarget(hit.transform.GetComponent<EnergyStandScript>().ReleaseObjectToPlayer());
                     }
                 }  
             }        
         }
     }
 
-    public GameObject GetLoad()
+    public void OnTriggerEnter(Collider other)
     {
-        return load;
+        if (other.gameObject.tag == "Hazard")
+        {
+            Debug.Log("Hazard hit, respawning...");
+
+            gameObject.GetComponent<AudioSource>().Play();
+            if (handsFull) {
+                PutTargetDown();
+            }
+
+            this.transform.position = currentSpawn.transform.position;
+            this.transform.rotation = currentSpawn.transform.rotation;
+        }
     }
 
-    public void CallToUnload()
+    public GameObject GetItem()
     {
-        if (loaded)
+        return item;
+    }
+
+    public void CallToPutTargetDown()
+    {
+        if (handsFull)
         {
-            UnloadTarget();
+            PutTargetDown();
         }
-        Debug.Log("Called to Unload");
+        Debug.Log("Called to Unitem");
     }
 
     private bool IsGrounded() {
    		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
  	}
 
-    private void LoadTarget(GameObject target)
+    private void PickUpTarget(GameObject target)
     {
-        loaded = true;
-        load = target;
+        handsFull = true;
+        item = target;
         // Edit the picked up object to work as expected while in the players hands
-        if (load.gameObject.tag == "Tetrahedra")
+        if (item.gameObject.tag == "Tetrahedra")
         {
-            load.transform.localScale = new Vector3(60, 60, 60);
+            item.transform.localScale = new Vector3(60, 60, 60);
         }
-        load.transform.parent = transform.GetChild(0).GetChild(0).transform; // Sets the Holdpoint as the parent of object
-        load.GetComponent<Collider>().isTrigger = true;
-        load.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        load.transform.localPosition = Vector3.zero;
+        ManageItem();
     }
 
-    private void UnloadTarget()
+    private void PutTargetDown()
     {
-        load.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-        load.GetComponent<Collider>().isTrigger = false;
-        load.transform.parent = null; // if the object had a parent at some point, then the parent needs to be saved and used here
-        if (load.gameObject.tag == "Tetrahedra")
+        handsFull = false;
+        ManageItem();
+        if (item.gameObject.tag == "Tetrahedra")
         {
-            load.transform.localScale = new Vector3(100, 100, 100); // Shouldnt be hard coded, but is for now
-        }
-        loaded = false;
-        load = null;
+            item.transform.localScale = new Vector3(100, 100, 100); // Shouldnt be hard coded, but is for now
+        } 
+        item = null;
+    }
+
+    private void ThrowTarget()
+    {
+        temp = item;
+        PutTargetDown();
+        temp.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce);
+        temp = null;
+    }
+
+    private void ManageItem()
+    {
+        item.GetComponent<Collider>().isTrigger = handsFull;        // These lines 
+        item.GetComponent<Rigidbody>().isKinematic = handsFull;     // alter the rigidbody, so
+        item.GetComponent<Rigidbody>().useGravity = !handsFull;     // the obejct wont move in the hands of the player
+        if (handsFull)
+        {
+            item.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            item.transform.parent = transform.GetChild(0).GetChild(0).transform; // Sets the Holdpoint as the parent of object
+            item.transform.localPosition = Vector3.zero;
+            item.transform.localRotation = Quaternion.identity;
+        } else
+        {
+            item.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            item.transform.parent = null; // if the object had a parent at some point, then the parent needs to be saved and used here
+        } 
     }
 }
