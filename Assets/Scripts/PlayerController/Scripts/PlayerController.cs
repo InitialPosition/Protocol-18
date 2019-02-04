@@ -48,7 +48,14 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKeyDown("escape")) {
 			Cursor.lockState = CursorLockMode.None;
-            hud.GetComponent<PauseMenuScript>().openPauseMenu();
+            if (hud.GetComponent<PauseMenuScript>().MenuVisible())
+            {
+                hud.GetComponent<PauseMenuScript>().backToGame();
+            } else
+            {
+                hud.GetComponent<PauseMenuScript>().openPauseMenu();
+            }
+            
 		}
 
         if (Input.GetMouseButtonDown(0) && handsFull)

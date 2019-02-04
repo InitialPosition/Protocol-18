@@ -12,6 +12,11 @@ public class PlayerSpawnScript : MonoBehaviour {
 	void Start () {
 		spawnedPlayer = (GameObject) Instantiate(player, transform.position, Quaternion.identity);
 
+        if (GameObject.Find("HUD").GetComponent<PauseMenuScript>().MenuVisible())
+        {
+            GameObject.Find("HUD").GetComponent<PauseMenuScript>().backToGame();
+        }
+
 		Debug.Log("PLAYER ROTATION: " + spawnedPlayer.transform.localRotation);
 		Debug.Log("TARGET ROTATION: " + transform.rotation);
 
