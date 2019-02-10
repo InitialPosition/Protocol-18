@@ -572,13 +572,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b26957667d5104ab632a10dc9da700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedMode: 0
-  voxelFilePath: D:/Projekte/Unity/Protocol 18/Assets/Vox/CorridorWithFlatEnd.vox
+  advancedMode: 1
+  voxelFilePath: G:/Program Files (x86)/Unity/Projects/Protocol-18/Protocol-18/Assets/Vox/CorridorWithFlatEnd.vox
   voxelFileGUID: 
   voxelFileObject: {fileID: 100000, guid: 6bcd58ee6f068ae4aa06ddc1cf6d3353, type: 3}
   voxelFileSubIndex: 0
   fileType: 0
-  fileRefreshLastTimeTicks: 636847342235698297
+  fileRefreshLastTimeTicks: 636854212012116073
   dataVersion: 114
   legacyVoxImport: 0
   importMode: 1
@@ -593,12 +593,12 @@ MonoBehaviour:
   combineFaces: 1
   ignoreCavity: 1
   voxelStructure: {fileID: 0}
-  generateLightmapUVs: 0
+  generateLightmapUVs: 1
   generateLightmapUVsAngleError: 8
   generateLightmapUVsAreaError: 15
   generateLightmapUVsHardAngle: 88
   generateLightmapUVsPackMargin: 4
-  generateTangents: 0
+  generateTangents: 1
   meshFaceVertexOffset: 0
   generateMipMaps: 0
   updateMeshRendererMaterials: 1
