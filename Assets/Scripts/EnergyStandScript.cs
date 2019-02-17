@@ -53,7 +53,11 @@ public class EnergyStandScript : MonoBehaviour
         // Set the lights, so they dont flicker and are brighter
         foreach (Light lig in lightList)
         {
-            lig.gameObject.GetComponent<FlickerScript>().enabled = false;
+            if (lig.gameObject.GetComponent<FlickerScript>() != null)
+            {     
+                lig.gameObject.GetComponent<FlickerScript>().enabled = false;
+                lig.enabled = true;
+            }           
             lig.intensity += 0.5f;
         }
 

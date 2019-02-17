@@ -63,6 +63,11 @@ public class PlayerController : MonoBehaviour {
             ThrowTarget();
         }
 
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Debug.Log(item.transform.localRotation);
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (handsFull)
@@ -74,13 +79,22 @@ public class PlayerController : MonoBehaviour {
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit, pickUpRange))
                 {
-                    if (hit.transform.tag == "InteractableObject" || hit.transform.tag == "Tetrahedra")
+                    if (hit.transform.tag == "InteractableObject" || hit.transform.tag == "Tetrahedra" || hit.transform.tag == "Interactable Tablet")
                     {
                         //Debug.Log(hit.collider.gameObject.name);
                         PickUpTarget(hit.collider.gameObject);
                     } else if(hit.transform.tag == "EnergyStand")
                     {
                         PickUpTarget(hit.transform.GetComponent<EnergyStandScript>().ReleaseObjectToPlayer());
+                    } else if(hit.transform.tag == "Display")
+                    {
+                        if(hit.transform.GetComponent<DisplayControlScript>() != null)
+                        {
+                            hit.transform.GetComponent<DisplayControlScript>().CallDisplayFunction();
+                        }else
+                        {
+                            Debug.Log("Is there a DisplayScript missing on: " + hit.transform.name);
+                        }
                     }
                 }  
             }        
@@ -125,12 +139,16 @@ public class PlayerController : MonoBehaviour {
     {
         handsFull = true;
         item = target;
+        ManageItem();
         // Edit the picked up object to work as expected while in the players hands
         if (item.gameObject.tag == "Tetrahedra")
         {
             item.transform.localScale = new Vector3(60, 60, 60);
+        }else if(item.gameObject.tag == "Interactable Tablet")
+        {
+            item.transform.localPosition = new Vector3(-0.01f, 0.7f, 0f); 
+            item.transform.localRotation = new Quaternion(-0.4f, 0.5f, 0.4f, 0.5f);    
         }
-        ManageItem();
     }
 
     private void PutTargetDown()

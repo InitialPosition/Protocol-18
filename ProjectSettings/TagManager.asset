@@ -8,6 +8,8 @@ TagManager:
   - InteractableObject
   - EnergyStand
   - Hazard
+  - Interactable Tablet
+  - Display
   layers:
   - Default
   - TransparentFX

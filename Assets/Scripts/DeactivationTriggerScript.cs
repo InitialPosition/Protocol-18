@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class DeactivationTriggerScript : MonoBehaviour {
     [Tooltip("Every object in this list will be deactivated if something enters the trigger")]
-    public List<GameObject> activationList = new List<GameObject>();
+    public List<GameObject> deactivationList = new List<GameObject>();
 
     private void OnTriggerEnter(Collider other)
     {
-        foreach (GameObject obj in activationList)
+        DeactivateObjectsFromList();
+    }
+
+    public void DeactivateObjectsFromList()
+    {
+        foreach (GameObject obj in deactivationList)
         {
             obj.SetActive(false);
         }
