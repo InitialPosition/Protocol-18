@@ -42,12 +42,19 @@ public class PauseMenuScript : MonoBehaviour {
 
     public bool MenuVisible()
     {
-        if (backBtn.activeSelf)
+        if (backBtn != null)
         {
-            return true;
+            if (backBtn.activeSelf)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }else
         {
             return false;
-        }
+        } 
     }
 }
