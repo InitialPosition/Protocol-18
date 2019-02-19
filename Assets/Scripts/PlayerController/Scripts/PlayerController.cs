@@ -34,8 +34,11 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		hInput = Input.GetAxis("Horizontal") * speed;
-		vInput = Input.GetAxis("Vertical") * speed;
+
+        hInput = Input.GetAxis("Horizontal") * speed;
+        vInput = Input.GetAxis("Vertical") * speed;
+
+		
 
 		hInput *= Time.deltaTime;
 		vInput *= Time.deltaTime;
@@ -61,11 +64,6 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && handsFull)
         {
             ThrowTarget();
-        }
-
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Debug.Log(item.transform.localRotation);
         }
 
         if (Input.GetKeyDown(KeyCode.E))

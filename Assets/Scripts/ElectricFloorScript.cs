@@ -42,7 +42,7 @@ public class ElectricFloorScript : MonoBehaviour {
 
 			counter = toggleOnSpeed;
 			electroFloor.SetActive(false);
-			killTrigger.SetActive(false);
+			//killTrigger.SetActive(false);
 
 			gameObject.GetComponent<AudioSource>().Stop();
 		} else {
@@ -50,7 +50,7 @@ public class ElectricFloorScript : MonoBehaviour {
 			
 			counter = toggleOffSpeed;
 			electroFloor.SetActive(true);
-			killTrigger.SetActive(true);
+			//killTrigger.SetActive(true);
 
 			gameObject.GetComponent<AudioSource>().Play();
 		}
