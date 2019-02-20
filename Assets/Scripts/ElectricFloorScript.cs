@@ -6,8 +6,12 @@ public class ElectricFloorScript : MonoBehaviour {
 
 	[Range(0.0f, 10.0f)]
 	public float toggleOnSpeed;
+
 	[Range(0.0f, 10.0f)]
 	public float toggleOffSpeed;
+	
+	[Range(0.0f, 10.0f)]
+	public float startDelay;
 
 	private float counter;
 	private float currentCounter;
@@ -17,7 +21,7 @@ public class ElectricFloorScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		counter = toggleOnSpeed;
-		currentCounter = 0.0f;	
+		currentCounter = startDelay * -1;	
 
 		electroFloor = gameObject.transform.GetChild(0).gameObject;
 		killTrigger = gameObject.transform.GetChild(1).gameObject;

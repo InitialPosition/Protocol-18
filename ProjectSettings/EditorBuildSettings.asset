@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstLevel.unity
     guid: 3bae4109bcb87e54ca8a3322ea6f6511
+  - enabled: 1
+    path: Assets/Scenes/GravityLevel.unity
+    guid: 529cb3272a39b35499e2e1b7e25ff8a3
+  - enabled: 1
+    path: Assets/Scenes/ElectricFloorLevel.unity
+    guid: 5326270e2b4368f44af80786fd736b45
   m_configObjects: {}
