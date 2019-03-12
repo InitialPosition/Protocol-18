@@ -2380,7 +2380,7 @@ Transform:
   - {fileID: 1898905376}
   - {fileID: 2051054386}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347803385
 GameObject:
@@ -2576,6 +2576,85 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &412303811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1012673852489472, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412303812}
+  - component: {fileID: 412303814}
+  - component: {fileID: 412303813}
+  m_Layer: 0
+  m_Name: Hook
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &412303812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224572225572360548, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412303811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0009999999, y: 0.0010000004, z: 0.0010000004}
+  m_Children: []
+  m_Father: {fileID: 1735701972}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.5130005, y: -0.207}
+  m_SizeDelta: {x: 16, y: 3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &412303813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114040506643700796, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412303811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: a6ea9390c16251549b3faf14f60f307b, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &412303814
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222253056067531808, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412303811}
+  m_CullTransparentMesh: 0
 --- !u!1 &413118480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,7 +2694,7 @@ Transform:
   - {fileID: 1360652307}
   - {fileID: 2051574840}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &416805345
 Transform:
@@ -4186,7 +4265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &530340502
 GameObject:
@@ -4252,7 +4331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &567818665
 GameObject:
@@ -4945,8 +5024,4730 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &574689280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1853781232272312, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574689286}
+  - component: {fileID: 574689285}
+  - component: {fileID: 574689284}
+  - component: {fileID: 574689283}
+  - component: {fileID: 574689282}
+  - component: {fileID: 574689281}
+  m_Layer: 0
+  m_Name: Tablet
+  m_TagString: Interactable Tablet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &574689281
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 64508099351455978, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574689280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43870015862578878, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+--- !u!54 &574689282
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 54929199388230732, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574689280}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &574689283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114141708813417822, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574689280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b26957667d5104ab632a10dc9da700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advancedMode: 1
+  voxelFilePath: D:/Projekte/Unity/Protocol 18/Assets/Vox/Tablet.vox
+  voxelFileGUID: 
+  voxelFileObject: {fileID: 100000, guid: f64699983ae6c604d9c2618935a7aa56, type: 3}
+  voxelFileSubIndex: 0
+  fileType: 0
+  fileRefreshLastTimeTicks: 636880125385080216
+  dataVersion: 114
+  legacyVoxImport: 0
+  importMode: 1
+  importFlags: 0
+  importScale: {x: 0.2, y: 0.2, z: 0.2}
+  importOffset: {x: 0, y: 0, z: 0}
+  localOffset: {x: -32, y: -0, z: -16}
+  enableFaceFlags: -1
+  disableData:
+    disableList: []
+    faceList: 
+  combineFaces: 1
+  ignoreCavity: 1
+  voxelStructure: {fileID: 0}
+  generateLightmapUVs: 0
+  generateLightmapUVsAngleError: 8
+  generateLightmapUVsAreaError: 15
+  generateLightmapUVsHardAngle: 88
+  generateLightmapUVsPackMargin: 4
+  generateTangents: 0
+  meshFaceVertexOffset: 0
+  generateMipMaps: 0
+  updateMeshRendererMaterials: 1
+  updateMaterialTexture: 1
+  loadFromVoxelFile: 1
+  materialData:
+  - materialList: []
+    name: 
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0, g: 0, b: 0, a: 0}
+      emissionPower: 0
+  - materialList:
+    - x: 41
+      y: 6
+      z: 16
+    - x: 22
+      y: 6
+      z: 16
+    - x: 41
+      y: 6
+      z: 15
+    - x: 22
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 17
+    - x: 22
+      y: 6
+      z: 17
+    - x: 41
+      y: 6
+      z: 14
+    - x: 22
+      y: 6
+      z: 14
+    - x: 42
+      y: 6
+      z: 16
+    - x: 21
+      y: 6
+      z: 16
+    - x: 42
+      y: 6
+      z: 15
+    - x: 21
+      y: 6
+      z: 15
+    - x: 40
+      y: 6
+      z: 16
+    - x: 23
+      y: 6
+      z: 16
+    - x: 40
+      y: 6
+      z: 15
+    - x: 23
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 18
+    - x: 22
+      y: 6
+      z: 18
+    - x: 41
+      y: 6
+      z: 13
+    - x: 22
+      y: 6
+      z: 13
+    - x: 42
+      y: 6
+      z: 17
+    - x: 21
+      y: 6
+      z: 17
+    - x: 42
+      y: 6
+      z: 14
+    - x: 21
+      y: 6
+      z: 14
+    - x: 40
+      y: 6
+      z: 17
+    - x: 23
+      y: 6
+      z: 17
+    - x: 40
+      y: 6
+      z: 14
+    - x: 23
+      y: 6
+      z: 14
+    - x: 43
+      y: 6
+      z: 16
+    - x: 20
+      y: 6
+      z: 16
+    - x: 43
+      y: 6
+      z: 15
+    - x: 20
+      y: 6
+      z: 15
+    - x: 39
+      y: 6
+      z: 16
+    - x: 24
+      y: 6
+      z: 16
+    - x: 39
+      y: 6
+      z: 15
+    - x: 24
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 19
+    - x: 22
+      y: 6
+      z: 19
+    - x: 41
+      y: 6
+      z: 12
+    - x: 22
+      y: 6
+      z: 12
+    - x: 42
+      y: 6
+      z: 18
+    - x: 21
+      y: 6
+      z: 18
+    - x: 42
+      y: 6
+      z: 13
+    - x: 21
+      y: 6
+      z: 13
+    - x: 40
+      y: 6
+      z: 18
+    - x: 23
+      y: 6
+      z: 18
+    - x: 40
+      y: 6
+      z: 13
+    - x: 23
+      y: 6
+      z: 13
+    - x: 43
+      y: 6
+      z: 17
+    - x: 20
+      y: 6
+      z: 17
+    - x: 43
+      y: 6
+      z: 14
+    - x: 20
+      y: 6
+      z: 14
+    - x: 39
+      y: 6
+      z: 17
+    - x: 24
+      y: 6
+      z: 17
+    - x: 39
+      y: 6
+      z: 14
+    - x: 24
+      y: 6
+      z: 14
+    - x: 44
+      y: 6
+      z: 16
+    - x: 19
+      y: 6
+      z: 16
+    - x: 44
+      y: 6
+      z: 15
+    - x: 19
+      y: 6
+      z: 15
+    - x: 38
+      y: 6
+      z: 16
+    - x: 25
+      y: 6
+      z: 16
+    - x: 38
+      y: 6
+      z: 15
+    - x: 25
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 20
+    - x: 22
+      y: 6
+      z: 20
+    - x: 41
+      y: 6
+      z: 11
+    - x: 22
+      y: 6
+      z: 11
+    - x: 42
+      y: 6
+      z: 19
+    - x: 21
+      y: 6
+      z: 19
+    - x: 42
+      y: 6
+      z: 12
+    - x: 21
+      y: 6
+      z: 12
+    - x: 40
+      y: 6
+      z: 19
+    - x: 23
+      y: 6
+      z: 19
+    - x: 40
+      y: 6
+      z: 12
+    - x: 23
+      y: 6
+      z: 12
+    - x: 43
+      y: 6
+      z: 18
+    - x: 20
+      y: 6
+      z: 18
+    - x: 43
+      y: 6
+      z: 13
+    - x: 20
+      y: 6
+      z: 13
+    - x: 39
+      y: 6
+      z: 18
+    - x: 24
+      y: 6
+      z: 18
+    - x: 39
+      y: 6
+      z: 13
+    - x: 24
+      y: 6
+      z: 13
+    - x: 44
+      y: 6
+      z: 17
+    - x: 19
+      y: 6
+      z: 17
+    - x: 44
+      y: 6
+      z: 14
+    - x: 19
+      y: 6
+      z: 14
+    - x: 38
+      y: 6
+      z: 17
+    - x: 25
+      y: 6
+      z: 17
+    - x: 38
+      y: 6
+      z: 14
+    - x: 25
+      y: 6
+      z: 14
+    - x: 45
+      y: 6
+      z: 16
+    - x: 18
+      y: 6
+      z: 16
+    - x: 45
+      y: 6
+      z: 15
+    - x: 18
+      y: 6
+      z: 15
+    - x: 37
+      y: 6
+      z: 16
+    - x: 26
+      y: 6
+      z: 16
+    - x: 37
+      y: 6
+      z: 15
+    - x: 26
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 21
+    - x: 22
+      y: 6
+      z: 21
+    - x: 41
+      y: 6
+      z: 10
+    - x: 22
+      y: 6
+      z: 10
+    - x: 42
+      y: 6
+      z: 20
+    - x: 21
+      y: 6
+      z: 20
+    - x: 42
+      y: 6
+      z: 11
+    - x: 21
+      y: 6
+      z: 11
+    - x: 40
+      y: 6
+      z: 20
+    - x: 23
+      y: 6
+      z: 20
+    - x: 40
+      y: 6
+      z: 11
+    - x: 23
+      y: 6
+      z: 11
+    - x: 43
+      y: 6
+      z: 19
+    - x: 20
+      y: 6
+      z: 19
+    - x: 43
+      y: 6
+      z: 12
+    - x: 20
+      y: 6
+      z: 12
+    - x: 39
+      y: 6
+      z: 19
+    - x: 24
+      y: 6
+      z: 19
+    - x: 39
+      y: 6
+      z: 12
+    - x: 24
+      y: 6
+      z: 12
+    - x: 44
+      y: 6
+      z: 18
+    - x: 19
+      y: 6
+      z: 18
+    - x: 44
+      y: 6
+      z: 13
+    - x: 19
+      y: 6
+      z: 13
+    - x: 38
+      y: 6
+      z: 18
+    - x: 25
+      y: 6
+      z: 18
+    - x: 38
+      y: 6
+      z: 13
+    - x: 25
+      y: 6
+      z: 13
+    - x: 45
+      y: 6
+      z: 17
+    - x: 18
+      y: 6
+      z: 17
+    - x: 45
+      y: 6
+      z: 14
+    - x: 18
+      y: 6
+      z: 14
+    - x: 37
+      y: 6
+      z: 17
+    - x: 26
+      y: 6
+      z: 17
+    - x: 37
+      y: 6
+      z: 14
+    - x: 26
+      y: 6
+      z: 14
+    - x: 46
+      y: 6
+      z: 16
+    - x: 17
+      y: 6
+      z: 16
+    - x: 46
+      y: 6
+      z: 15
+    - x: 17
+      y: 6
+      z: 15
+    - x: 36
+      y: 6
+      z: 16
+    - x: 27
+      y: 6
+      z: 16
+    - x: 36
+      y: 6
+      z: 15
+    - x: 27
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 22
+    - x: 22
+      y: 6
+      z: 22
+    - x: 41
+      y: 6
+      z: 9
+    - x: 22
+      y: 6
+      z: 9
+    - x: 42
+      y: 6
+      z: 21
+    - x: 21
+      y: 6
+      z: 21
+    - x: 42
+      y: 6
+      z: 10
+    - x: 21
+      y: 6
+      z: 10
+    - x: 40
+      y: 6
+      z: 21
+    - x: 23
+      y: 6
+      z: 21
+    - x: 40
+      y: 6
+      z: 10
+    - x: 23
+      y: 6
+      z: 10
+    - x: 43
+      y: 6
+      z: 20
+    - x: 20
+      y: 6
+      z: 20
+    - x: 43
+      y: 6
+      z: 11
+    - x: 20
+      y: 6
+      z: 11
+    - x: 39
+      y: 6
+      z: 20
+    - x: 24
+      y: 6
+      z: 20
+    - x: 39
+      y: 6
+      z: 11
+    - x: 24
+      y: 6
+      z: 11
+    - x: 44
+      y: 6
+      z: 19
+    - x: 19
+      y: 6
+      z: 19
+    - x: 44
+      y: 6
+      z: 12
+    - x: 19
+      y: 6
+      z: 12
+    - x: 38
+      y: 6
+      z: 19
+    - x: 25
+      y: 6
+      z: 19
+    - x: 38
+      y: 6
+      z: 12
+    - x: 25
+      y: 6
+      z: 12
+    - x: 45
+      y: 6
+      z: 18
+    - x: 18
+      y: 6
+      z: 18
+    - x: 45
+      y: 6
+      z: 13
+    - x: 18
+      y: 6
+      z: 13
+    - x: 37
+      y: 6
+      z: 18
+    - x: 26
+      y: 6
+      z: 18
+    - x: 37
+      y: 6
+      z: 13
+    - x: 26
+      y: 6
+      z: 13
+    - x: 46
+      y: 6
+      z: 17
+    - x: 17
+      y: 6
+      z: 17
+    - x: 46
+      y: 6
+      z: 14
+    - x: 17
+      y: 6
+      z: 14
+    - x: 36
+      y: 6
+      z: 17
+    - x: 27
+      y: 6
+      z: 17
+    - x: 36
+      y: 6
+      z: 14
+    - x: 27
+      y: 6
+      z: 14
+    - x: 47
+      y: 6
+      z: 16
+    - x: 16
+      y: 6
+      z: 16
+    - x: 47
+      y: 6
+      z: 15
+    - x: 16
+      y: 6
+      z: 15
+    - x: 35
+      y: 6
+      z: 16
+    - x: 28
+      y: 6
+      z: 16
+    - x: 35
+      y: 6
+      z: 15
+    - x: 28
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 23
+    - x: 22
+      y: 6
+      z: 23
+    - x: 41
+      y: 6
+      z: 8
+    - x: 22
+      y: 6
+      z: 8
+    - x: 42
+      y: 6
+      z: 22
+    - x: 21
+      y: 6
+      z: 22
+    - x: 42
+      y: 6
+      z: 9
+    - x: 21
+      y: 6
+      z: 9
+    - x: 40
+      y: 6
+      z: 22
+    - x: 23
+      y: 6
+      z: 22
+    - x: 40
+      y: 6
+      z: 9
+    - x: 23
+      y: 6
+      z: 9
+    - x: 43
+      y: 6
+      z: 21
+    - x: 20
+      y: 6
+      z: 21
+    - x: 43
+      y: 6
+      z: 10
+    - x: 20
+      y: 6
+      z: 10
+    - x: 39
+      y: 6
+      z: 21
+    - x: 24
+      y: 6
+      z: 21
+    - x: 39
+      y: 6
+      z: 10
+    - x: 24
+      y: 6
+      z: 10
+    - x: 44
+      y: 6
+      z: 20
+    - x: 19
+      y: 6
+      z: 20
+    - x: 44
+      y: 6
+      z: 11
+    - x: 19
+      y: 6
+      z: 11
+    - x: 38
+      y: 6
+      z: 20
+    - x: 25
+      y: 6
+      z: 20
+    - x: 38
+      y: 6
+      z: 11
+    - x: 25
+      y: 6
+      z: 11
+    - x: 45
+      y: 6
+      z: 19
+    - x: 18
+      y: 6
+      z: 19
+    - x: 45
+      y: 6
+      z: 12
+    - x: 18
+      y: 6
+      z: 12
+    - x: 37
+      y: 6
+      z: 19
+    - x: 26
+      y: 6
+      z: 19
+    - x: 37
+      y: 6
+      z: 12
+    - x: 26
+      y: 6
+      z: 12
+    - x: 46
+      y: 6
+      z: 18
+    - x: 17
+      y: 6
+      z: 18
+    - x: 46
+      y: 6
+      z: 13
+    - x: 17
+      y: 6
+      z: 13
+    - x: 36
+      y: 6
+      z: 18
+    - x: 27
+      y: 6
+      z: 18
+    - x: 36
+      y: 6
+      z: 13
+    - x: 27
+      y: 6
+      z: 13
+    - x: 47
+      y: 6
+      z: 17
+    - x: 16
+      y: 6
+      z: 17
+    - x: 47
+      y: 6
+      z: 14
+    - x: 16
+      y: 6
+      z: 14
+    - x: 35
+      y: 6
+      z: 17
+    - x: 28
+      y: 6
+      z: 17
+    - x: 35
+      y: 6
+      z: 14
+    - x: 28
+      y: 6
+      z: 14
+    - x: 48
+      y: 6
+      z: 16
+    - x: 15
+      y: 6
+      z: 16
+    - x: 48
+      y: 6
+      z: 15
+    - x: 15
+      y: 6
+      z: 15
+    - x: 34
+      y: 6
+      z: 16
+    - x: 29
+      y: 6
+      z: 16
+    - x: 34
+      y: 6
+      z: 15
+    - x: 29
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 24
+    - x: 22
+      y: 6
+      z: 24
+    - x: 41
+      y: 6
+      z: 7
+    - x: 22
+      y: 6
+      z: 7
+    - x: 42
+      y: 6
+      z: 23
+    - x: 21
+      y: 6
+      z: 23
+    - x: 42
+      y: 6
+      z: 8
+    - x: 21
+      y: 6
+      z: 8
+    - x: 40
+      y: 6
+      z: 23
+    - x: 23
+      y: 6
+      z: 23
+    - x: 40
+      y: 6
+      z: 8
+    - x: 23
+      y: 6
+      z: 8
+    - x: 43
+      y: 6
+      z: 22
+    - x: 20
+      y: 6
+      z: 22
+    - x: 43
+      y: 6
+      z: 9
+    - x: 20
+      y: 6
+      z: 9
+    - x: 39
+      y: 6
+      z: 22
+    - x: 24
+      y: 6
+      z: 22
+    - x: 39
+      y: 6
+      z: 9
+    - x: 24
+      y: 6
+      z: 9
+    - x: 44
+      y: 6
+      z: 21
+    - x: 19
+      y: 6
+      z: 21
+    - x: 44
+      y: 6
+      z: 10
+    - x: 19
+      y: 6
+      z: 10
+    - x: 38
+      y: 6
+      z: 21
+    - x: 25
+      y: 6
+      z: 21
+    - x: 38
+      y: 6
+      z: 10
+    - x: 25
+      y: 6
+      z: 10
+    - x: 45
+      y: 6
+      z: 20
+    - x: 18
+      y: 6
+      z: 20
+    - x: 45
+      y: 6
+      z: 11
+    - x: 18
+      y: 6
+      z: 11
+    - x: 37
+      y: 6
+      z: 20
+    - x: 26
+      y: 6
+      z: 20
+    - x: 37
+      y: 6
+      z: 11
+    - x: 26
+      y: 6
+      z: 11
+    - x: 46
+      y: 6
+      z: 19
+    - x: 17
+      y: 6
+      z: 19
+    - x: 46
+      y: 6
+      z: 12
+    - x: 17
+      y: 6
+      z: 12
+    - x: 36
+      y: 6
+      z: 19
+    - x: 27
+      y: 6
+      z: 19
+    - x: 36
+      y: 6
+      z: 12
+    - x: 27
+      y: 6
+      z: 12
+    - x: 47
+      y: 6
+      z: 18
+    - x: 16
+      y: 6
+      z: 18
+    - x: 47
+      y: 6
+      z: 13
+    - x: 16
+      y: 6
+      z: 13
+    - x: 35
+      y: 6
+      z: 18
+    - x: 28
+      y: 6
+      z: 18
+    - x: 35
+      y: 6
+      z: 13
+    - x: 28
+      y: 6
+      z: 13
+    - x: 48
+      y: 6
+      z: 17
+    - x: 15
+      y: 6
+      z: 17
+    - x: 48
+      y: 6
+      z: 14
+    - x: 15
+      y: 6
+      z: 14
+    - x: 34
+      y: 6
+      z: 17
+    - x: 29
+      y: 6
+      z: 17
+    - x: 34
+      y: 6
+      z: 14
+    - x: 29
+      y: 6
+      z: 14
+    - x: 49
+      y: 6
+      z: 16
+    - x: 14
+      y: 6
+      z: 16
+    - x: 49
+      y: 6
+      z: 15
+    - x: 14
+      y: 6
+      z: 15
+    - x: 33
+      y: 6
+      z: 16
+    - x: 30
+      y: 6
+      z: 16
+    - x: 33
+      y: 6
+      z: 15
+    - x: 30
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 25
+    - x: 22
+      y: 6
+      z: 25
+    - x: 41
+      y: 6
+      z: 6
+    - x: 22
+      y: 6
+      z: 6
+    - x: 42
+      y: 6
+      z: 24
+    - x: 21
+      y: 6
+      z: 24
+    - x: 42
+      y: 6
+      z: 7
+    - x: 21
+      y: 6
+      z: 7
+    - x: 40
+      y: 6
+      z: 24
+    - x: 23
+      y: 6
+      z: 24
+    - x: 40
+      y: 6
+      z: 7
+    - x: 23
+      y: 6
+      z: 7
+    - x: 43
+      y: 6
+      z: 23
+    - x: 20
+      y: 6
+      z: 23
+    - x: 43
+      y: 6
+      z: 8
+    - x: 20
+      y: 6
+      z: 8
+    - x: 39
+      y: 6
+      z: 23
+    - x: 24
+      y: 6
+      z: 23
+    - x: 39
+      y: 6
+      z: 8
+    - x: 24
+      y: 6
+      z: 8
+    - x: 44
+      y: 6
+      z: 22
+    - x: 19
+      y: 6
+      z: 22
+    - x: 44
+      y: 6
+      z: 9
+    - x: 19
+      y: 6
+      z: 9
+    - x: 38
+      y: 6
+      z: 22
+    - x: 25
+      y: 6
+      z: 22
+    - x: 38
+      y: 6
+      z: 9
+    - x: 25
+      y: 6
+      z: 9
+    - x: 45
+      y: 6
+      z: 21
+    - x: 18
+      y: 6
+      z: 21
+    - x: 45
+      y: 6
+      z: 10
+    - x: 18
+      y: 6
+      z: 10
+    - x: 37
+      y: 6
+      z: 21
+    - x: 26
+      y: 6
+      z: 21
+    - x: 37
+      y: 6
+      z: 10
+    - x: 26
+      y: 6
+      z: 10
+    - x: 46
+      y: 6
+      z: 20
+    - x: 17
+      y: 6
+      z: 20
+    - x: 46
+      y: 6
+      z: 11
+    - x: 17
+      y: 6
+      z: 11
+    - x: 36
+      y: 6
+      z: 20
+    - x: 27
+      y: 6
+      z: 20
+    - x: 36
+      y: 6
+      z: 11
+    - x: 27
+      y: 6
+      z: 11
+    - x: 47
+      y: 6
+      z: 19
+    - x: 16
+      y: 6
+      z: 19
+    - x: 47
+      y: 6
+      z: 12
+    - x: 16
+      y: 6
+      z: 12
+    - x: 35
+      y: 6
+      z: 19
+    - x: 28
+      y: 6
+      z: 19
+    - x: 35
+      y: 6
+      z: 12
+    - x: 28
+      y: 6
+      z: 12
+    - x: 48
+      y: 6
+      z: 18
+    - x: 15
+      y: 6
+      z: 18
+    - x: 48
+      y: 6
+      z: 13
+    - x: 15
+      y: 6
+      z: 13
+    - x: 34
+      y: 6
+      z: 18
+    - x: 29
+      y: 6
+      z: 18
+    - x: 34
+      y: 6
+      z: 13
+    - x: 29
+      y: 6
+      z: 13
+    - x: 49
+      y: 6
+      z: 17
+    - x: 14
+      y: 6
+      z: 17
+    - x: 49
+      y: 6
+      z: 14
+    - x: 14
+      y: 6
+      z: 14
+    - x: 33
+      y: 6
+      z: 17
+    - x: 30
+      y: 6
+      z: 17
+    - x: 33
+      y: 6
+      z: 14
+    - x: 30
+      y: 6
+      z: 14
+    - x: 50
+      y: 6
+      z: 16
+    - x: 13
+      y: 6
+      z: 16
+    - x: 50
+      y: 6
+      z: 15
+    - x: 13
+      y: 6
+      z: 15
+    - x: 32
+      y: 6
+      z: 16
+    - x: 31
+      y: 6
+      z: 16
+    - x: 32
+      y: 6
+      z: 15
+    - x: 31
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 26
+    - x: 22
+      y: 6
+      z: 26
+    - x: 41
+      y: 6
+      z: 5
+    - x: 22
+      y: 6
+      z: 5
+    - x: 42
+      y: 6
+      z: 25
+    - x: 21
+      y: 6
+      z: 25
+    - x: 42
+      y: 6
+      z: 6
+    - x: 21
+      y: 6
+      z: 6
+    - x: 40
+      y: 6
+      z: 25
+    - x: 23
+      y: 6
+      z: 25
+    - x: 40
+      y: 6
+      z: 6
+    - x: 23
+      y: 6
+      z: 6
+    - x: 43
+      y: 6
+      z: 24
+    - x: 20
+      y: 6
+      z: 24
+    - x: 43
+      y: 6
+      z: 7
+    - x: 20
+      y: 6
+      z: 7
+    - x: 39
+      y: 6
+      z: 24
+    - x: 24
+      y: 6
+      z: 24
+    - x: 39
+      y: 6
+      z: 7
+    - x: 24
+      y: 6
+      z: 7
+    - x: 44
+      y: 6
+      z: 23
+    - x: 19
+      y: 6
+      z: 23
+    - x: 44
+      y: 6
+      z: 8
+    - x: 19
+      y: 6
+      z: 8
+    - x: 38
+      y: 6
+      z: 23
+    - x: 25
+      y: 6
+      z: 23
+    - x: 38
+      y: 6
+      z: 8
+    - x: 25
+      y: 6
+      z: 8
+    - x: 45
+      y: 6
+      z: 22
+    - x: 18
+      y: 6
+      z: 22
+    - x: 45
+      y: 6
+      z: 9
+    - x: 18
+      y: 6
+      z: 9
+    - x: 37
+      y: 6
+      z: 22
+    - x: 26
+      y: 6
+      z: 22
+    - x: 37
+      y: 6
+      z: 9
+    - x: 26
+      y: 6
+      z: 9
+    - x: 46
+      y: 6
+      z: 21
+    - x: 17
+      y: 6
+      z: 21
+    - x: 46
+      y: 6
+      z: 10
+    - x: 17
+      y: 6
+      z: 10
+    - x: 36
+      y: 6
+      z: 21
+    - x: 27
+      y: 6
+      z: 21
+    - x: 36
+      y: 6
+      z: 10
+    - x: 27
+      y: 6
+      z: 10
+    - x: 47
+      y: 6
+      z: 20
+    - x: 16
+      y: 6
+      z: 20
+    - x: 47
+      y: 6
+      z: 11
+    - x: 16
+      y: 6
+      z: 11
+    - x: 35
+      y: 6
+      z: 20
+    - x: 28
+      y: 6
+      z: 20
+    - x: 35
+      y: 6
+      z: 11
+    - x: 28
+      y: 6
+      z: 11
+    - x: 48
+      y: 6
+      z: 19
+    - x: 15
+      y: 6
+      z: 19
+    - x: 48
+      y: 6
+      z: 12
+    - x: 15
+      y: 6
+      z: 12
+    - x: 34
+      y: 6
+      z: 19
+    - x: 29
+      y: 6
+      z: 19
+    - x: 34
+      y: 6
+      z: 12
+    - x: 29
+      y: 6
+      z: 12
+    - x: 49
+      y: 6
+      z: 18
+    - x: 14
+      y: 6
+      z: 18
+    - x: 49
+      y: 6
+      z: 13
+    - x: 14
+      y: 6
+      z: 13
+    - x: 33
+      y: 6
+      z: 18
+    - x: 30
+      y: 6
+      z: 18
+    - x: 33
+      y: 6
+      z: 13
+    - x: 30
+      y: 6
+      z: 13
+    - x: 50
+      y: 6
+      z: 17
+    - x: 13
+      y: 6
+      z: 17
+    - x: 50
+      y: 6
+      z: 14
+    - x: 13
+      y: 6
+      z: 14
+    - x: 32
+      y: 6
+      z: 17
+    - x: 31
+      y: 6
+      z: 17
+    - x: 32
+      y: 6
+      z: 14
+    - x: 31
+      y: 6
+      z: 14
+    - x: 51
+      y: 6
+      z: 16
+    - x: 12
+      y: 6
+      z: 16
+    - x: 51
+      y: 6
+      z: 15
+    - x: 12
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 27
+    - x: 22
+      y: 6
+      z: 27
+    - x: 41
+      y: 6
+      z: 4
+    - x: 22
+      y: 6
+      z: 4
+    - x: 42
+      y: 6
+      z: 26
+    - x: 21
+      y: 6
+      z: 26
+    - x: 42
+      y: 6
+      z: 5
+    - x: 21
+      y: 6
+      z: 5
+    - x: 40
+      y: 6
+      z: 26
+    - x: 23
+      y: 6
+      z: 26
+    - x: 40
+      y: 6
+      z: 5
+    - x: 23
+      y: 6
+      z: 5
+    - x: 43
+      y: 6
+      z: 25
+    - x: 20
+      y: 6
+      z: 25
+    - x: 43
+      y: 6
+      z: 6
+    - x: 20
+      y: 6
+      z: 6
+    - x: 39
+      y: 6
+      z: 25
+    - x: 24
+      y: 6
+      z: 25
+    - x: 39
+      y: 6
+      z: 6
+    - x: 24
+      y: 6
+      z: 6
+    - x: 44
+      y: 6
+      z: 24
+    - x: 19
+      y: 6
+      z: 24
+    - x: 44
+      y: 6
+      z: 7
+    - x: 19
+      y: 6
+      z: 7
+    - x: 38
+      y: 6
+      z: 24
+    - x: 25
+      y: 6
+      z: 24
+    - x: 38
+      y: 6
+      z: 7
+    - x: 25
+      y: 6
+      z: 7
+    - x: 45
+      y: 6
+      z: 23
+    - x: 18
+      y: 6
+      z: 23
+    - x: 45
+      y: 6
+      z: 8
+    - x: 18
+      y: 6
+      z: 8
+    - x: 37
+      y: 6
+      z: 23
+    - x: 26
+      y: 6
+      z: 23
+    - x: 37
+      y: 6
+      z: 8
+    - x: 26
+      y: 6
+      z: 8
+    - x: 46
+      y: 6
+      z: 22
+    - x: 17
+      y: 6
+      z: 22
+    - x: 46
+      y: 6
+      z: 9
+    - x: 17
+      y: 6
+      z: 9
+    - x: 36
+      y: 6
+      z: 22
+    - x: 27
+      y: 6
+      z: 22
+    - x: 36
+      y: 6
+      z: 9
+    - x: 27
+      y: 6
+      z: 9
+    - x: 47
+      y: 6
+      z: 21
+    - x: 16
+      y: 6
+      z: 21
+    - x: 47
+      y: 6
+      z: 10
+    - x: 16
+      y: 6
+      z: 10
+    - x: 35
+      y: 6
+      z: 21
+    - x: 28
+      y: 6
+      z: 21
+    - x: 35
+      y: 6
+      z: 10
+    - x: 28
+      y: 6
+      z: 10
+    - x: 48
+      y: 6
+      z: 20
+    - x: 15
+      y: 6
+      z: 20
+    - x: 48
+      y: 6
+      z: 11
+    - x: 15
+      y: 6
+      z: 11
+    - x: 34
+      y: 6
+      z: 20
+    - x: 29
+      y: 6
+      z: 20
+    - x: 34
+      y: 6
+      z: 11
+    - x: 29
+      y: 6
+      z: 11
+    - x: 49
+      y: 6
+      z: 19
+    - x: 14
+      y: 6
+      z: 19
+    - x: 49
+      y: 6
+      z: 12
+    - x: 14
+      y: 6
+      z: 12
+    - x: 33
+      y: 6
+      z: 19
+    - x: 30
+      y: 6
+      z: 19
+    - x: 33
+      y: 6
+      z: 12
+    - x: 30
+      y: 6
+      z: 12
+    - x: 50
+      y: 6
+      z: 18
+    - x: 13
+      y: 6
+      z: 18
+    - x: 50
+      y: 6
+      z: 13
+    - x: 13
+      y: 6
+      z: 13
+    - x: 32
+      y: 6
+      z: 18
+    - x: 31
+      y: 6
+      z: 18
+    - x: 32
+      y: 6
+      z: 13
+    - x: 31
+      y: 6
+      z: 13
+    - x: 51
+      y: 6
+      z: 17
+    - x: 12
+      y: 6
+      z: 17
+    - x: 51
+      y: 6
+      z: 14
+    - x: 12
+      y: 6
+      z: 14
+    - x: 52
+      y: 6
+      z: 16
+    - x: 11
+      y: 6
+      z: 16
+    - x: 52
+      y: 6
+      z: 15
+    - x: 11
+      y: 6
+      z: 15
+    - x: 41
+      y: 6
+      z: 28
+    - x: 22
+      y: 6
+      z: 28
+    - x: 41
+      y: 6
+      z: 3
+    - x: 22
+      y: 6
+      z: 3
+    - x: 42
+      y: 6
+      z: 27
+    - x: 21
+      y: 6
+      z: 27
+    - x: 42
+      y: 6
+      z: 4
+    - x: 21
+      y: 6
+      z: 4
+    - x: 40
+      y: 6
+      z: 27
+    - x: 23
+      y: 6
+      z: 27
+    - x: 40
+      y: 6
+      z: 4
+    - x: 23
+      y: 6
+      z: 4
+    - x: 43
+      y: 6
+      z: 26
+    - x: 20
+      y: 6
+      z: 26
+    - x: 43
+      y: 6
+      z: 5
+    - x: 20
+      y: 6
+      z: 5
+    - x: 39
+      y: 6
+      z: 26
+    - x: 24
+      y: 6
+      z: 26
+    - x: 39
+      y: 6
+      z: 5
+    - x: 24
+      y: 6
+      z: 5
+    - x: 44
+      y: 6
+      z: 25
+    - x: 19
+      y: 6
+      z: 25
+    - x: 44
+      y: 6
+      z: 6
+    - x: 19
+      y: 6
+      z: 6
+    - x: 38
+      y: 6
+      z: 25
+    - x: 25
+      y: 6
+      z: 25
+    - x: 38
+      y: 6
+      z: 6
+    - x: 25
+      y: 6
+      z: 6
+    - x: 45
+      y: 6
+      z: 24
+    - x: 18
+      y: 6
+      z: 24
+    - x: 45
+      y: 6
+      z: 7
+    - x: 18
+      y: 6
+      z: 7
+    - x: 37
+      y: 6
+      z: 24
+    - x: 26
+      y: 6
+      z: 24
+    - x: 37
+      y: 6
+      z: 7
+    - x: 26
+      y: 6
+      z: 7
+    - x: 46
+      y: 6
+      z: 23
+    - x: 17
+      y: 6
+      z: 23
+    - x: 46
+      y: 6
+      z: 8
+    - x: 17
+      y: 6
+      z: 8
+    - x: 36
+      y: 6
+      z: 23
+    - x: 27
+      y: 6
+      z: 23
+    - x: 36
+      y: 6
+      z: 8
+    - x: 27
+      y: 6
+      z: 8
+    - x: 47
+      y: 6
+      z: 22
+    - x: 16
+      y: 6
+      z: 22
+    - x: 47
+      y: 6
+      z: 9
+    - x: 16
+      y: 6
+      z: 9
+    - x: 35
+      y: 6
+      z: 22
+    - x: 28
+      y: 6
+      z: 22
+    - x: 35
+      y: 6
+      z: 9
+    - x: 28
+      y: 6
+      z: 9
+    - x: 48
+      y: 6
+      z: 21
+    - x: 15
+      y: 6
+      z: 21
+    - x: 48
+      y: 6
+      z: 10
+    - x: 15
+      y: 6
+      z: 10
+    - x: 34
+      y: 6
+      z: 21
+    - x: 29
+      y: 6
+      z: 21
+    - x: 34
+      y: 6
+      z: 10
+    - x: 29
+      y: 6
+      z: 10
+    - x: 49
+      y: 6
+      z: 20
+    - x: 14
+      y: 6
+      z: 20
+    - x: 49
+      y: 6
+      z: 11
+    - x: 14
+      y: 6
+      z: 11
+    - x: 33
+      y: 6
+      z: 20
+    - x: 30
+      y: 6
+      z: 20
+    - x: 33
+      y: 6
+      z: 11
+    - x: 30
+      y: 6
+      z: 11
+    - x: 50
+      y: 6
+      z: 19
+    - x: 13
+      y: 6
+      z: 19
+    - x: 50
+      y: 6
+      z: 12
+    - x: 13
+      y: 6
+      z: 12
+    - x: 32
+      y: 6
+      z: 19
+    - x: 31
+      y: 6
+      z: 19
+    - x: 32
+      y: 6
+      z: 12
+    - x: 31
+      y: 6
+      z: 12
+    - x: 51
+      y: 6
+      z: 18
+    - x: 12
+      y: 6
+      z: 18
+    - x: 51
+      y: 6
+      z: 13
+    - x: 12
+      y: 6
+      z: 13
+    - x: 52
+      y: 6
+      z: 17
+    - x: 11
+      y: 6
+      z: 17
+    - x: 52
+      y: 6
+      z: 14
+    - x: 11
+      y: 6
+      z: 14
+    - x: 53
+      y: 6
+      z: 16
+    - x: 10
+      y: 6
+      z: 16
+    - x: 53
+      y: 6
+      z: 15
+    - x: 10
+      y: 6
+      z: 15
+    - x: 42
+      y: 6
+      z: 28
+    - x: 21
+      y: 6
+      z: 28
+    - x: 42
+      y: 6
+      z: 3
+    - x: 21
+      y: 6
+      z: 3
+    - x: 40
+      y: 6
+      z: 28
+    - x: 23
+      y: 6
+      z: 28
+    - x: 40
+      y: 6
+      z: 3
+    - x: 23
+      y: 6
+      z: 3
+    - x: 43
+      y: 6
+      z: 27
+    - x: 20
+      y: 6
+      z: 27
+    - x: 43
+      y: 6
+      z: 4
+    - x: 20
+      y: 6
+      z: 4
+    - x: 39
+      y: 6
+      z: 27
+    - x: 24
+      y: 6
+      z: 27
+    - x: 39
+      y: 6
+      z: 4
+    - x: 24
+      y: 6
+      z: 4
+    - x: 44
+      y: 6
+      z: 26
+    - x: 19
+      y: 6
+      z: 26
+    - x: 44
+      y: 6
+      z: 5
+    - x: 19
+      y: 6
+      z: 5
+    - x: 38
+      y: 6
+      z: 26
+    - x: 25
+      y: 6
+      z: 26
+    - x: 38
+      y: 6
+      z: 5
+    - x: 25
+      y: 6
+      z: 5
+    - x: 45
+      y: 6
+      z: 25
+    - x: 18
+      y: 6
+      z: 25
+    - x: 45
+      y: 6
+      z: 6
+    - x: 18
+      y: 6
+      z: 6
+    - x: 37
+      y: 6
+      z: 25
+    - x: 26
+      y: 6
+      z: 25
+    - x: 37
+      y: 6
+      z: 6
+    - x: 26
+      y: 6
+      z: 6
+    - x: 46
+      y: 6
+      z: 24
+    - x: 17
+      y: 6
+      z: 24
+    - x: 46
+      y: 6
+      z: 7
+    - x: 17
+      y: 6
+      z: 7
+    - x: 36
+      y: 6
+      z: 24
+    - x: 27
+      y: 6
+      z: 24
+    - x: 36
+      y: 6
+      z: 7
+    - x: 27
+      y: 6
+      z: 7
+    - x: 47
+      y: 6
+      z: 23
+    - x: 16
+      y: 6
+      z: 23
+    - x: 47
+      y: 6
+      z: 8
+    - x: 16
+      y: 6
+      z: 8
+    - x: 35
+      y: 6
+      z: 23
+    - x: 28
+      y: 6
+      z: 23
+    - x: 35
+      y: 6
+      z: 8
+    - x: 28
+      y: 6
+      z: 8
+    - x: 48
+      y: 6
+      z: 22
+    - x: 15
+      y: 6
+      z: 22
+    - x: 48
+      y: 6
+      z: 9
+    - x: 15
+      y: 6
+      z: 9
+    - x: 34
+      y: 6
+      z: 22
+    - x: 29
+      y: 6
+      z: 22
+    - x: 34
+      y: 6
+      z: 9
+    - x: 29
+      y: 6
+      z: 9
+    - x: 49
+      y: 6
+      z: 21
+    - x: 14
+      y: 6
+      z: 21
+    - x: 49
+      y: 6
+      z: 10
+    - x: 14
+      y: 6
+      z: 10
+    - x: 33
+      y: 6
+      z: 21
+    - x: 30
+      y: 6
+      z: 21
+    - x: 33
+      y: 6
+      z: 10
+    - x: 30
+      y: 6
+      z: 10
+    - x: 50
+      y: 6
+      z: 20
+    - x: 13
+      y: 6
+      z: 20
+    - x: 50
+      y: 6
+      z: 11
+    - x: 13
+      y: 6
+      z: 11
+    - x: 32
+      y: 6
+      z: 20
+    - x: 31
+      y: 6
+      z: 20
+    - x: 32
+      y: 6
+      z: 11
+    - x: 31
+      y: 6
+      z: 11
+    - x: 51
+      y: 6
+      z: 19
+    - x: 12
+      y: 6
+      z: 19
+    - x: 51
+      y: 6
+      z: 12
+    - x: 12
+      y: 6
+      z: 12
+    - x: 52
+      y: 6
+      z: 18
+    - x: 11
+      y: 6
+      z: 18
+    - x: 52
+      y: 6
+      z: 13
+    - x: 11
+      y: 6
+      z: 13
+    - x: 53
+      y: 6
+      z: 17
+    - x: 10
+      y: 6
+      z: 17
+    - x: 53
+      y: 6
+      z: 14
+    - x: 10
+      y: 6
+      z: 14
+    - x: 54
+      y: 6
+      z: 16
+    - x: 9
+      y: 6
+      z: 16
+    - x: 54
+      y: 6
+      z: 15
+    - x: 9
+      y: 6
+      z: 15
+    - x: 43
+      y: 6
+      z: 28
+    - x: 20
+      y: 6
+      z: 28
+    - x: 43
+      y: 6
+      z: 3
+    - x: 20
+      y: 6
+      z: 3
+    - x: 39
+      y: 6
+      z: 28
+    - x: 24
+      y: 6
+      z: 28
+    - x: 39
+      y: 6
+      z: 3
+    - x: 24
+      y: 6
+      z: 3
+    - x: 44
+      y: 6
+      z: 27
+    - x: 19
+      y: 6
+      z: 27
+    - x: 44
+      y: 6
+      z: 4
+    - x: 19
+      y: 6
+      z: 4
+    - x: 38
+      y: 6
+      z: 27
+    - x: 25
+      y: 6
+      z: 27
+    - x: 38
+      y: 6
+      z: 4
+    - x: 25
+      y: 6
+      z: 4
+    - x: 45
+      y: 6
+      z: 26
+    - x: 18
+      y: 6
+      z: 26
+    - x: 45
+      y: 6
+      z: 5
+    - x: 18
+      y: 6
+      z: 5
+    - x: 37
+      y: 6
+      z: 26
+    - x: 26
+      y: 6
+      z: 26
+    - x: 37
+      y: 6
+      z: 5
+    - x: 26
+      y: 6
+      z: 5
+    - x: 46
+      y: 6
+      z: 25
+    - x: 17
+      y: 6
+      z: 25
+    - x: 46
+      y: 6
+      z: 6
+    - x: 17
+      y: 6
+      z: 6
+    - x: 36
+      y: 6
+      z: 25
+    - x: 27
+      y: 6
+      z: 25
+    - x: 36
+      y: 6
+      z: 6
+    - x: 27
+      y: 6
+      z: 6
+    - x: 47
+      y: 6
+      z: 24
+    - x: 16
+      y: 6
+      z: 24
+    - x: 47
+      y: 6
+      z: 7
+    - x: 16
+      y: 6
+      z: 7
+    - x: 35
+      y: 6
+      z: 24
+    - x: 28
+      y: 6
+      z: 24
+    - x: 35
+      y: 6
+      z: 7
+    - x: 28
+      y: 6
+      z: 7
+    - x: 48
+      y: 6
+      z: 23
+    - x: 15
+      y: 6
+      z: 23
+    - x: 48
+      y: 6
+      z: 8
+    - x: 15
+      y: 6
+      z: 8
+    - x: 34
+      y: 6
+      z: 23
+    - x: 29
+      y: 6
+      z: 23
+    - x: 34
+      y: 6
+      z: 8
+    - x: 29
+      y: 6
+      z: 8
+    - x: 49
+      y: 6
+      z: 22
+    - x: 14
+      y: 6
+      z: 22
+    - x: 49
+      y: 6
+      z: 9
+    - x: 14
+      y: 6
+      z: 9
+    - x: 33
+      y: 6
+      z: 22
+    - x: 30
+      y: 6
+      z: 22
+    - x: 33
+      y: 6
+      z: 9
+    - x: 30
+      y: 6
+      z: 9
+    - x: 50
+      y: 6
+      z: 21
+    - x: 13
+      y: 6
+      z: 21
+    - x: 50
+      y: 6
+      z: 10
+    - x: 13
+      y: 6
+      z: 10
+    - x: 32
+      y: 6
+      z: 21
+    - x: 31
+      y: 6
+      z: 21
+    - x: 32
+      y: 6
+      z: 10
+    - x: 31
+      y: 6
+      z: 10
+    - x: 51
+      y: 6
+      z: 20
+    - x: 12
+      y: 6
+      z: 20
+    - x: 51
+      y: 6
+      z: 11
+    - x: 12
+      y: 6
+      z: 11
+    - x: 52
+      y: 6
+      z: 19
+    - x: 11
+      y: 6
+      z: 19
+    - x: 52
+      y: 6
+      z: 12
+    - x: 11
+      y: 6
+      z: 12
+    - x: 53
+      y: 6
+      z: 18
+    - x: 10
+      y: 6
+      z: 18
+    - x: 53
+      y: 6
+      z: 13
+    - x: 10
+      y: 6
+      z: 13
+    - x: 54
+      y: 6
+      z: 17
+    - x: 9
+      y: 6
+      z: 17
+    - x: 54
+      y: 6
+      z: 14
+    - x: 9
+      y: 6
+      z: 14
+    - x: 55
+      y: 6
+      z: 16
+    - x: 8
+      y: 6
+      z: 16
+    - x: 55
+      y: 6
+      z: 15
+    - x: 8
+      y: 6
+      z: 15
+    - x: 44
+      y: 6
+      z: 28
+    - x: 19
+      y: 6
+      z: 28
+    - x: 44
+      y: 6
+      z: 3
+    - x: 19
+      y: 6
+      z: 3
+    - x: 38
+      y: 6
+      z: 28
+    - x: 25
+      y: 6
+      z: 28
+    - x: 38
+      y: 6
+      z: 3
+    - x: 25
+      y: 6
+      z: 3
+    - x: 45
+      y: 6
+      z: 27
+    - x: 18
+      y: 6
+      z: 27
+    - x: 45
+      y: 6
+      z: 4
+    - x: 18
+      y: 6
+      z: 4
+    - x: 37
+      y: 6
+      z: 27
+    - x: 26
+      y: 6
+      z: 27
+    - x: 37
+      y: 6
+      z: 4
+    - x: 26
+      y: 6
+      z: 4
+    - x: 46
+      y: 6
+      z: 26
+    - x: 17
+      y: 6
+      z: 26
+    - x: 46
+      y: 6
+      z: 5
+    - x: 17
+      y: 6
+      z: 5
+    - x: 36
+      y: 6
+      z: 26
+    - x: 27
+      y: 6
+      z: 26
+    - x: 36
+      y: 6
+      z: 5
+    - x: 27
+      y: 6
+      z: 5
+    - x: 47
+      y: 6
+      z: 25
+    - x: 16
+      y: 6
+      z: 25
+    - x: 47
+      y: 6
+      z: 6
+    - x: 16
+      y: 6
+      z: 6
+    - x: 35
+      y: 6
+      z: 25
+    - x: 28
+      y: 6
+      z: 25
+    - x: 35
+      y: 6
+      z: 6
+    - x: 28
+      y: 6
+      z: 6
+    - x: 48
+      y: 6
+      z: 24
+    - x: 15
+      y: 6
+      z: 24
+    - x: 48
+      y: 6
+      z: 7
+    - x: 15
+      y: 6
+      z: 7
+    - x: 34
+      y: 6
+      z: 24
+    - x: 29
+      y: 6
+      z: 24
+    - x: 34
+      y: 6
+      z: 7
+    - x: 29
+      y: 6
+      z: 7
+    - x: 49
+      y: 6
+      z: 23
+    - x: 14
+      y: 6
+      z: 23
+    - x: 49
+      y: 6
+      z: 8
+    - x: 14
+      y: 6
+      z: 8
+    - x: 33
+      y: 6
+      z: 23
+    - x: 30
+      y: 6
+      z: 23
+    - x: 33
+      y: 6
+      z: 8
+    - x: 30
+      y: 6
+      z: 8
+    - x: 50
+      y: 6
+      z: 22
+    - x: 13
+      y: 6
+      z: 22
+    - x: 50
+      y: 6
+      z: 9
+    - x: 13
+      y: 6
+      z: 9
+    - x: 32
+      y: 6
+      z: 22
+    - x: 31
+      y: 6
+      z: 22
+    - x: 32
+      y: 6
+      z: 9
+    - x: 31
+      y: 6
+      z: 9
+    - x: 51
+      y: 6
+      z: 21
+    - x: 12
+      y: 6
+      z: 21
+    - x: 51
+      y: 6
+      z: 10
+    - x: 12
+      y: 6
+      z: 10
+    - x: 52
+      y: 6
+      z: 20
+    - x: 11
+      y: 6
+      z: 20
+    - x: 52
+      y: 6
+      z: 11
+    - x: 11
+      y: 6
+      z: 11
+    - x: 53
+      y: 6
+      z: 19
+    - x: 10
+      y: 6
+      z: 19
+    - x: 53
+      y: 6
+      z: 12
+    - x: 10
+      y: 6
+      z: 12
+    - x: 54
+      y: 6
+      z: 18
+    - x: 9
+      y: 6
+      z: 18
+    - x: 54
+      y: 6
+      z: 13
+    - x: 9
+      y: 6
+      z: 13
+    - x: 55
+      y: 6
+      z: 17
+    - x: 8
+      y: 6
+      z: 17
+    - x: 55
+      y: 6
+      z: 14
+    - x: 8
+      y: 6
+      z: 14
+    - x: 56
+      y: 6
+      z: 16
+    - x: 7
+      y: 6
+      z: 16
+    - x: 56
+      y: 6
+      z: 15
+    - x: 7
+      y: 6
+      z: 15
+    - x: 45
+      y: 6
+      z: 28
+    - x: 18
+      y: 6
+      z: 28
+    - x: 45
+      y: 6
+      z: 3
+    - x: 18
+      y: 6
+      z: 3
+    - x: 37
+      y: 6
+      z: 28
+    - x: 26
+      y: 6
+      z: 28
+    - x: 37
+      y: 6
+      z: 3
+    - x: 26
+      y: 6
+      z: 3
+    - x: 46
+      y: 6
+      z: 27
+    - x: 17
+      y: 6
+      z: 27
+    - x: 46
+      y: 6
+      z: 4
+    - x: 17
+      y: 6
+      z: 4
+    - x: 36
+      y: 6
+      z: 27
+    - x: 27
+      y: 6
+      z: 27
+    - x: 36
+      y: 6
+      z: 4
+    - x: 27
+      y: 6
+      z: 4
+    - x: 47
+      y: 6
+      z: 26
+    - x: 16
+      y: 6
+      z: 26
+    - x: 47
+      y: 6
+      z: 5
+    - x: 16
+      y: 6
+      z: 5
+    - x: 35
+      y: 6
+      z: 26
+    - x: 28
+      y: 6
+      z: 26
+    - x: 35
+      y: 6
+      z: 5
+    - x: 28
+      y: 6
+      z: 5
+    - x: 48
+      y: 6
+      z: 25
+    - x: 15
+      y: 6
+      z: 25
+    - x: 48
+      y: 6
+      z: 6
+    - x: 15
+      y: 6
+      z: 6
+    - x: 34
+      y: 6
+      z: 25
+    - x: 29
+      y: 6
+      z: 25
+    - x: 34
+      y: 6
+      z: 6
+    - x: 29
+      y: 6
+      z: 6
+    - x: 49
+      y: 6
+      z: 24
+    - x: 14
+      y: 6
+      z: 24
+    - x: 49
+      y: 6
+      z: 7
+    - x: 14
+      y: 6
+      z: 7
+    - x: 33
+      y: 6
+      z: 24
+    - x: 30
+      y: 6
+      z: 24
+    - x: 33
+      y: 6
+      z: 7
+    - x: 30
+      y: 6
+      z: 7
+    - x: 50
+      y: 6
+      z: 23
+    - x: 13
+      y: 6
+      z: 23
+    - x: 50
+      y: 6
+      z: 8
+    - x: 13
+      y: 6
+      z: 8
+    - x: 32
+      y: 6
+      z: 23
+    - x: 31
+      y: 6
+      z: 23
+    - x: 32
+      y: 6
+      z: 8
+    - x: 31
+      y: 6
+      z: 8
+    - x: 51
+      y: 6
+      z: 22
+    - x: 12
+      y: 6
+      z: 22
+    - x: 51
+      y: 6
+      z: 9
+    - x: 12
+      y: 6
+      z: 9
+    - x: 52
+      y: 6
+      z: 21
+    - x: 11
+      y: 6
+      z: 21
+    - x: 52
+      y: 6
+      z: 10
+    - x: 11
+      y: 6
+      z: 10
+    - x: 53
+      y: 6
+      z: 20
+    - x: 10
+      y: 6
+      z: 20
+    - x: 53
+      y: 6
+      z: 11
+    - x: 10
+      y: 6
+      z: 11
+    - x: 54
+      y: 6
+      z: 19
+    - x: 9
+      y: 6
+      z: 19
+    - x: 54
+      y: 6
+      z: 12
+    - x: 9
+      y: 6
+      z: 12
+    - x: 55
+      y: 6
+      z: 18
+    - x: 8
+      y: 6
+      z: 18
+    - x: 55
+      y: 6
+      z: 13
+    - x: 8
+      y: 6
+      z: 13
+    - x: 56
+      y: 6
+      z: 17
+    - x: 7
+      y: 6
+      z: 17
+    - x: 56
+      y: 6
+      z: 14
+    - x: 7
+      y: 6
+      z: 14
+    - x: 57
+      y: 6
+      z: 16
+    - x: 6
+      y: 6
+      z: 16
+    - x: 57
+      y: 6
+      z: 15
+    - x: 6
+      y: 6
+      z: 15
+    - x: 46
+      y: 6
+      z: 28
+    - x: 17
+      y: 6
+      z: 28
+    - x: 46
+      y: 6
+      z: 3
+    - x: 17
+      y: 6
+      z: 3
+    - x: 36
+      y: 6
+      z: 28
+    - x: 27
+      y: 6
+      z: 28
+    - x: 36
+      y: 6
+      z: 3
+    - x: 27
+      y: 6
+      z: 3
+    - x: 47
+      y: 6
+      z: 27
+    - x: 16
+      y: 6
+      z: 27
+    - x: 47
+      y: 6
+      z: 4
+    - x: 16
+      y: 6
+      z: 4
+    - x: 35
+      y: 6
+      z: 27
+    - x: 28
+      y: 6
+      z: 27
+    - x: 35
+      y: 6
+      z: 4
+    - x: 28
+      y: 6
+      z: 4
+    - x: 48
+      y: 6
+      z: 26
+    - x: 15
+      y: 6
+      z: 26
+    - x: 48
+      y: 6
+      z: 5
+    - x: 15
+      y: 6
+      z: 5
+    - x: 34
+      y: 6
+      z: 26
+    - x: 29
+      y: 6
+      z: 26
+    - x: 34
+      y: 6
+      z: 5
+    - x: 29
+      y: 6
+      z: 5
+    - x: 49
+      y: 6
+      z: 25
+    - x: 14
+      y: 6
+      z: 25
+    - x: 49
+      y: 6
+      z: 6
+    - x: 14
+      y: 6
+      z: 6
+    - x: 33
+      y: 6
+      z: 25
+    - x: 30
+      y: 6
+      z: 25
+    - x: 33
+      y: 6
+      z: 6
+    - x: 30
+      y: 6
+      z: 6
+    - x: 50
+      y: 6
+      z: 24
+    - x: 13
+      y: 6
+      z: 24
+    - x: 50
+      y: 6
+      z: 7
+    - x: 13
+      y: 6
+      z: 7
+    - x: 32
+      y: 6
+      z: 24
+    - x: 31
+      y: 6
+      z: 24
+    - x: 32
+      y: 6
+      z: 7
+    - x: 31
+      y: 6
+      z: 7
+    - x: 51
+      y: 6
+      z: 23
+    - x: 12
+      y: 6
+      z: 23
+    - x: 51
+      y: 6
+      z: 8
+    - x: 12
+      y: 6
+      z: 8
+    - x: 52
+      y: 6
+      z: 22
+    - x: 11
+      y: 6
+      z: 22
+    - x: 52
+      y: 6
+      z: 9
+    - x: 11
+      y: 6
+      z: 9
+    - x: 53
+      y: 6
+      z: 21
+    - x: 10
+      y: 6
+      z: 21
+    - x: 53
+      y: 6
+      z: 10
+    - x: 10
+      y: 6
+      z: 10
+    - x: 54
+      y: 6
+      z: 20
+    - x: 9
+      y: 6
+      z: 20
+    - x: 54
+      y: 6
+      z: 11
+    - x: 9
+      y: 6
+      z: 11
+    - x: 55
+      y: 6
+      z: 19
+    - x: 8
+      y: 6
+      z: 19
+    - x: 55
+      y: 6
+      z: 12
+    - x: 8
+      y: 6
+      z: 12
+    - x: 56
+      y: 6
+      z: 18
+    - x: 7
+      y: 6
+      z: 18
+    - x: 56
+      y: 6
+      z: 13
+    - x: 7
+      y: 6
+      z: 13
+    - x: 57
+      y: 6
+      z: 17
+    - x: 6
+      y: 6
+      z: 17
+    - x: 57
+      y: 6
+      z: 14
+    - x: 6
+      y: 6
+      z: 14
+    - x: 58
+      y: 6
+      z: 16
+    - x: 5
+      y: 6
+      z: 16
+    - x: 58
+      y: 6
+      z: 15
+    - x: 5
+      y: 6
+      z: 15
+    - x: 47
+      y: 6
+      z: 28
+    - x: 16
+      y: 6
+      z: 28
+    - x: 47
+      y: 6
+      z: 3
+    - x: 16
+      y: 6
+      z: 3
+    - x: 35
+      y: 6
+      z: 28
+    - x: 28
+      y: 6
+      z: 28
+    - x: 35
+      y: 6
+      z: 3
+    - x: 28
+      y: 6
+      z: 3
+    - x: 48
+      y: 6
+      z: 27
+    - x: 15
+      y: 6
+      z: 27
+    - x: 48
+      y: 6
+      z: 4
+    - x: 15
+      y: 6
+      z: 4
+    - x: 34
+      y: 6
+      z: 27
+    - x: 29
+      y: 6
+      z: 27
+    - x: 34
+      y: 6
+      z: 4
+    - x: 29
+      y: 6
+      z: 4
+    - x: 49
+      y: 6
+      z: 26
+    - x: 14
+      y: 6
+      z: 26
+    - x: 49
+      y: 6
+      z: 5
+    - x: 14
+      y: 6
+      z: 5
+    - x: 33
+      y: 6
+      z: 26
+    - x: 30
+      y: 6
+      z: 26
+    - x: 33
+      y: 6
+      z: 5
+    - x: 30
+      y: 6
+      z: 5
+    - x: 50
+      y: 6
+      z: 25
+    - x: 13
+      y: 6
+      z: 25
+    - x: 50
+      y: 6
+      z: 6
+    - x: 13
+      y: 6
+      z: 6
+    - x: 32
+      y: 6
+      z: 25
+    - x: 31
+      y: 6
+      z: 25
+    - x: 32
+      y: 6
+      z: 6
+    - x: 31
+      y: 6
+      z: 6
+    - x: 51
+      y: 6
+      z: 24
+    - x: 12
+      y: 6
+      z: 24
+    - x: 51
+      y: 6
+      z: 7
+    - x: 12
+      y: 6
+      z: 7
+    - x: 52
+      y: 6
+      z: 23
+    - x: 11
+      y: 6
+      z: 23
+    - x: 52
+      y: 6
+      z: 8
+    - x: 11
+      y: 6
+      z: 8
+    - x: 53
+      y: 6
+      z: 22
+    - x: 10
+      y: 6
+      z: 22
+    - x: 53
+      y: 6
+      z: 9
+    - x: 10
+      y: 6
+      z: 9
+    - x: 54
+      y: 6
+      z: 21
+    - x: 9
+      y: 6
+      z: 21
+    - x: 54
+      y: 6
+      z: 10
+    - x: 9
+      y: 6
+      z: 10
+    - x: 55
+      y: 6
+      z: 20
+    - x: 8
+      y: 6
+      z: 20
+    - x: 55
+      y: 6
+      z: 11
+    - x: 8
+      y: 6
+      z: 11
+    - x: 56
+      y: 6
+      z: 19
+    - x: 7
+      y: 6
+      z: 19
+    - x: 56
+      y: 6
+      z: 12
+    - x: 7
+      y: 6
+      z: 12
+    - x: 57
+      y: 6
+      z: 18
+    - x: 6
+      y: 6
+      z: 18
+    - x: 57
+      y: 6
+      z: 13
+    - x: 6
+      y: 6
+      z: 13
+    - x: 58
+      y: 6
+      z: 17
+    - x: 5
+      y: 6
+      z: 17
+    - x: 58
+      y: 6
+      z: 14
+    - x: 5
+      y: 6
+      z: 14
+    - x: 59
+      y: 6
+      z: 16
+    - x: 4
+      y: 6
+      z: 16
+    - x: 59
+      y: 6
+      z: 15
+    - x: 4
+      y: 6
+      z: 15
+    - x: 48
+      y: 6
+      z: 28
+    - x: 15
+      y: 6
+      z: 28
+    - x: 48
+      y: 6
+      z: 3
+    - x: 15
+      y: 6
+      z: 3
+    - x: 34
+      y: 6
+      z: 28
+    - x: 29
+      y: 6
+      z: 28
+    - x: 34
+      y: 6
+      z: 3
+    - x: 29
+      y: 6
+      z: 3
+    - x: 49
+      y: 6
+      z: 27
+    - x: 14
+      y: 6
+      z: 27
+    - x: 49
+      y: 6
+      z: 4
+    - x: 14
+      y: 6
+      z: 4
+    - x: 33
+      y: 6
+      z: 27
+    - x: 30
+      y: 6
+      z: 27
+    - x: 33
+      y: 6
+      z: 4
+    - x: 30
+      y: 6
+      z: 4
+    - x: 50
+      y: 6
+      z: 26
+    - x: 13
+      y: 6
+      z: 26
+    - x: 50
+      y: 6
+      z: 5
+    - x: 13
+      y: 6
+      z: 5
+    - x: 32
+      y: 6
+      z: 26
+    - x: 31
+      y: 6
+      z: 26
+    - x: 32
+      y: 6
+      z: 5
+    - x: 31
+      y: 6
+      z: 5
+    - x: 51
+      y: 6
+      z: 25
+    - x: 12
+      y: 6
+      z: 25
+    - x: 51
+      y: 6
+      z: 6
+    - x: 12
+      y: 6
+      z: 6
+    - x: 52
+      y: 6
+      z: 24
+    - x: 11
+      y: 6
+      z: 24
+    - x: 52
+      y: 6
+      z: 7
+    - x: 11
+      y: 6
+      z: 7
+    - x: 53
+      y: 6
+      z: 23
+    - x: 10
+      y: 6
+      z: 23
+    - x: 53
+      y: 6
+      z: 8
+    - x: 10
+      y: 6
+      z: 8
+    - x: 54
+      y: 6
+      z: 22
+    - x: 9
+      y: 6
+      z: 22
+    - x: 54
+      y: 6
+      z: 9
+    - x: 9
+      y: 6
+      z: 9
+    - x: 55
+      y: 6
+      z: 21
+    - x: 8
+      y: 6
+      z: 21
+    - x: 55
+      y: 6
+      z: 10
+    - x: 8
+      y: 6
+      z: 10
+    - x: 56
+      y: 6
+      z: 20
+    - x: 7
+      y: 6
+      z: 20
+    - x: 56
+      y: 6
+      z: 11
+    - x: 7
+      y: 6
+      z: 11
+    - x: 57
+      y: 6
+      z: 19
+    - x: 6
+      y: 6
+      z: 19
+    - x: 57
+      y: 6
+      z: 12
+    - x: 6
+      y: 6
+      z: 12
+    - x: 58
+      y: 6
+      z: 18
+    - x: 5
+      y: 6
+      z: 18
+    - x: 58
+      y: 6
+      z: 13
+    - x: 5
+      y: 6
+      z: 13
+    - x: 59
+      y: 6
+      z: 17
+    - x: 4
+      y: 6
+      z: 17
+    - x: 59
+      y: 6
+      z: 14
+    - x: 4
+      y: 6
+      z: 14
+    - x: 60
+      y: 6
+      z: 16
+    - x: 3
+      y: 6
+      z: 16
+    - x: 60
+      y: 6
+      z: 15
+    - x: 3
+      y: 6
+      z: 15
+    - x: 49
+      y: 6
+      z: 28
+    - x: 14
+      y: 6
+      z: 28
+    - x: 49
+      y: 6
+      z: 3
+    - x: 14
+      y: 6
+      z: 3
+    - x: 33
+      y: 6
+      z: 28
+    - x: 30
+      y: 6
+      z: 28
+    - x: 33
+      y: 6
+      z: 3
+    - x: 30
+      y: 6
+      z: 3
+    - x: 50
+      y: 6
+      z: 27
+    - x: 13
+      y: 6
+      z: 27
+    - x: 50
+      y: 6
+      z: 4
+    - x: 13
+      y: 6
+      z: 4
+    - x: 32
+      y: 6
+      z: 27
+    - x: 31
+      y: 6
+      z: 27
+    - x: 32
+      y: 6
+      z: 4
+    - x: 31
+      y: 6
+      z: 4
+    - x: 51
+      y: 6
+      z: 26
+    - x: 12
+      y: 6
+      z: 26
+    - x: 51
+      y: 6
+      z: 5
+    - x: 12
+      y: 6
+      z: 5
+    - x: 52
+      y: 6
+      z: 25
+    - x: 11
+      y: 6
+      z: 25
+    - x: 52
+      y: 6
+      z: 6
+    - x: 11
+      y: 6
+      z: 6
+    - x: 53
+      y: 6
+      z: 24
+    - x: 10
+      y: 6
+      z: 24
+    - x: 53
+      y: 6
+      z: 7
+    - x: 10
+      y: 6
+      z: 7
+    - x: 54
+      y: 6
+      z: 23
+    - x: 9
+      y: 6
+      z: 23
+    - x: 54
+      y: 6
+      z: 8
+    - x: 9
+      y: 6
+      z: 8
+    - x: 55
+      y: 6
+      z: 22
+    - x: 8
+      y: 6
+      z: 22
+    - x: 55
+      y: 6
+      z: 9
+    - x: 8
+      y: 6
+      z: 9
+    - x: 56
+      y: 6
+      z: 21
+    - x: 7
+      y: 6
+      z: 21
+    - x: 56
+      y: 6
+      z: 10
+    - x: 7
+      y: 6
+      z: 10
+    - x: 57
+      y: 6
+      z: 20
+    - x: 6
+      y: 6
+      z: 20
+    - x: 57
+      y: 6
+      z: 11
+    - x: 6
+      y: 6
+      z: 11
+    - x: 58
+      y: 6
+      z: 19
+    - x: 5
+      y: 6
+      z: 19
+    - x: 58
+      y: 6
+      z: 12
+    - x: 5
+      y: 6
+      z: 12
+    - x: 59
+      y: 6
+      z: 18
+    - x: 4
+      y: 6
+      z: 18
+    - x: 59
+      y: 6
+      z: 13
+    - x: 4
+      y: 6
+      z: 13
+    - x: 60
+      y: 6
+      z: 17
+    - x: 3
+      y: 6
+      z: 17
+    - x: 60
+      y: 6
+      z: 14
+    - x: 3
+      y: 6
+      z: 14
+    - x: 50
+      y: 6
+      z: 28
+    - x: 13
+      y: 6
+      z: 28
+    - x: 50
+      y: 6
+      z: 3
+    - x: 13
+      y: 6
+      z: 3
+    - x: 32
+      y: 6
+      z: 28
+    - x: 31
+      y: 6
+      z: 28
+    - x: 32
+      y: 6
+      z: 3
+    - x: 31
+      y: 6
+      z: 3
+    - x: 51
+      y: 6
+      z: 27
+    - x: 12
+      y: 6
+      z: 27
+    - x: 51
+      y: 6
+      z: 4
+    - x: 12
+      y: 6
+      z: 4
+    - x: 52
+      y: 6
+      z: 26
+    - x: 11
+      y: 6
+      z: 26
+    - x: 52
+      y: 6
+      z: 5
+    - x: 11
+      y: 6
+      z: 5
+    - x: 53
+      y: 6
+      z: 25
+    - x: 10
+      y: 6
+      z: 25
+    - x: 53
+      y: 6
+      z: 6
+    - x: 10
+      y: 6
+      z: 6
+    - x: 54
+      y: 6
+      z: 24
+    - x: 9
+      y: 6
+      z: 24
+    - x: 54
+      y: 6
+      z: 7
+    - x: 9
+      y: 6
+      z: 7
+    - x: 55
+      y: 6
+      z: 23
+    - x: 8
+      y: 6
+      z: 23
+    - x: 55
+      y: 6
+      z: 8
+    - x: 8
+      y: 6
+      z: 8
+    - x: 56
+      y: 6
+      z: 22
+    - x: 7
+      y: 6
+      z: 22
+    - x: 56
+      y: 6
+      z: 9
+    - x: 7
+      y: 6
+      z: 9
+    - x: 57
+      y: 6
+      z: 21
+    - x: 6
+      y: 6
+      z: 21
+    - x: 57
+      y: 6
+      z: 10
+    - x: 6
+      y: 6
+      z: 10
+    - x: 58
+      y: 6
+      z: 20
+    - x: 5
+      y: 6
+      z: 20
+    - x: 58
+      y: 6
+      z: 11
+    - x: 5
+      y: 6
+      z: 11
+    - x: 59
+      y: 6
+      z: 19
+    - x: 4
+      y: 6
+      z: 19
+    - x: 59
+      y: 6
+      z: 12
+    - x: 4
+      y: 6
+      z: 12
+    - x: 60
+      y: 6
+      z: 18
+    - x: 3
+      y: 6
+      z: 18
+    - x: 60
+      y: 6
+      z: 13
+    - x: 3
+      y: 6
+      z: 13
+    - x: 51
+      y: 6
+      z: 28
+    - x: 12
+      y: 6
+      z: 28
+    - x: 51
+      y: 6
+      z: 3
+    - x: 12
+      y: 6
+      z: 3
+    - x: 52
+      y: 6
+      z: 27
+    - x: 11
+      y: 6
+      z: 27
+    - x: 52
+      y: 6
+      z: 4
+    - x: 11
+      y: 6
+      z: 4
+    - x: 53
+      y: 6
+      z: 26
+    - x: 10
+      y: 6
+      z: 26
+    - x: 53
+      y: 6
+      z: 5
+    - x: 10
+      y: 6
+      z: 5
+    - x: 54
+      y: 6
+      z: 25
+    - x: 9
+      y: 6
+      z: 25
+    - x: 54
+      y: 6
+      z: 6
+    - x: 9
+      y: 6
+      z: 6
+    - x: 55
+      y: 6
+      z: 24
+    - x: 8
+      y: 6
+      z: 24
+    - x: 55
+      y: 6
+      z: 7
+    - x: 8
+      y: 6
+      z: 7
+    - x: 56
+      y: 6
+      z: 23
+    - x: 7
+      y: 6
+      z: 23
+    - x: 56
+      y: 6
+      z: 8
+    - x: 7
+      y: 6
+      z: 8
+    - x: 57
+      y: 6
+      z: 22
+    - x: 6
+      y: 6
+      z: 22
+    - x: 57
+      y: 6
+      z: 9
+    - x: 6
+      y: 6
+      z: 9
+    - x: 58
+      y: 6
+      z: 21
+    - x: 5
+      y: 6
+      z: 21
+    - x: 58
+      y: 6
+      z: 10
+    - x: 5
+      y: 6
+      z: 10
+    - x: 59
+      y: 6
+      z: 20
+    - x: 4
+      y: 6
+      z: 20
+    - x: 59
+      y: 6
+      z: 11
+    - x: 4
+      y: 6
+      z: 11
+    - x: 60
+      y: 6
+      z: 19
+    - x: 3
+      y: 6
+      z: 19
+    - x: 60
+      y: 6
+      z: 12
+    - x: 3
+      y: 6
+      z: 12
+    - x: 52
+      y: 6
+      z: 28
+    - x: 11
+      y: 6
+      z: 28
+    - x: 52
+      y: 6
+      z: 3
+    - x: 11
+      y: 6
+      z: 3
+    - x: 53
+      y: 6
+      z: 27
+    - x: 10
+      y: 6
+      z: 27
+    - x: 53
+      y: 6
+      z: 4
+    - x: 10
+      y: 6
+      z: 4
+    - x: 54
+      y: 6
+      z: 26
+    - x: 9
+      y: 6
+      z: 26
+    - x: 54
+      y: 6
+      z: 5
+    - x: 9
+      y: 6
+      z: 5
+    - x: 55
+      y: 6
+      z: 25
+    - x: 8
+      y: 6
+      z: 25
+    - x: 55
+      y: 6
+      z: 6
+    - x: 8
+      y: 6
+      z: 6
+    - x: 56
+      y: 6
+      z: 24
+    - x: 7
+      y: 6
+      z: 24
+    - x: 56
+      y: 6
+      z: 7
+    - x: 7
+      y: 6
+      z: 7
+    - x: 57
+      y: 6
+      z: 23
+    - x: 6
+      y: 6
+      z: 23
+    - x: 57
+      y: 6
+      z: 8
+    - x: 6
+      y: 6
+      z: 8
+    - x: 58
+      y: 6
+      z: 22
+    - x: 5
+      y: 6
+      z: 22
+    - x: 58
+      y: 6
+      z: 9
+    - x: 5
+      y: 6
+      z: 9
+    - x: 59
+      y: 6
+      z: 21
+    - x: 4
+      y: 6
+      z: 21
+    - x: 59
+      y: 6
+      z: 10
+    - x: 4
+      y: 6
+      z: 10
+    - x: 60
+      y: 6
+      z: 20
+    - x: 3
+      y: 6
+      z: 20
+    - x: 60
+      y: 6
+      z: 11
+    - x: 3
+      y: 6
+      z: 11
+    - x: 53
+      y: 6
+      z: 28
+    - x: 10
+      y: 6
+      z: 28
+    - x: 53
+      y: 6
+      z: 3
+    - x: 10
+      y: 6
+      z: 3
+    - x: 54
+      y: 6
+      z: 27
+    - x: 9
+      y: 6
+      z: 27
+    - x: 54
+      y: 6
+      z: 4
+    - x: 9
+      y: 6
+      z: 4
+    - x: 55
+      y: 6
+      z: 26
+    - x: 8
+      y: 6
+      z: 26
+    - x: 55
+      y: 6
+      z: 5
+    - x: 8
+      y: 6
+      z: 5
+    - x: 56
+      y: 6
+      z: 25
+    - x: 7
+      y: 6
+      z: 25
+    - x: 56
+      y: 6
+      z: 6
+    - x: 7
+      y: 6
+      z: 6
+    - x: 57
+      y: 6
+      z: 24
+    - x: 6
+      y: 6
+      z: 24
+    - x: 57
+      y: 6
+      z: 7
+    - x: 6
+      y: 6
+      z: 7
+    - x: 58
+      y: 6
+      z: 23
+    - x: 5
+      y: 6
+      z: 23
+    - x: 58
+      y: 6
+      z: 8
+    - x: 5
+      y: 6
+      z: 8
+    - x: 59
+      y: 6
+      z: 22
+    - x: 4
+      y: 6
+      z: 22
+    - x: 59
+      y: 6
+      z: 9
+    - x: 4
+      y: 6
+      z: 9
+    - x: 60
+      y: 6
+      z: 21
+    - x: 3
+      y: 6
+      z: 21
+    - x: 60
+      y: 6
+      z: 10
+    - x: 3
+      y: 6
+      z: 10
+    - x: 54
+      y: 6
+      z: 28
+    - x: 9
+      y: 6
+      z: 28
+    - x: 54
+      y: 6
+      z: 3
+    - x: 9
+      y: 6
+      z: 3
+    - x: 55
+      y: 6
+      z: 27
+    - x: 8
+      y: 6
+      z: 27
+    - x: 55
+      y: 6
+      z: 4
+    - x: 8
+      y: 6
+      z: 4
+    - x: 56
+      y: 6
+      z: 26
+    - x: 7
+      y: 6
+      z: 26
+    - x: 56
+      y: 6
+      z: 5
+    - x: 7
+      y: 6
+      z: 5
+    - x: 57
+      y: 6
+      z: 25
+    - x: 6
+      y: 6
+      z: 25
+    - x: 57
+      y: 6
+      z: 6
+    - x: 6
+      y: 6
+      z: 6
+    - x: 58
+      y: 6
+      z: 24
+    - x: 5
+      y: 6
+      z: 24
+    - x: 58
+      y: 6
+      z: 7
+    - x: 5
+      y: 6
+      z: 7
+    - x: 59
+      y: 6
+      z: 23
+    - x: 4
+      y: 6
+      z: 23
+    - x: 59
+      y: 6
+      z: 8
+    - x: 4
+      y: 6
+      z: 8
+    - x: 60
+      y: 6
+      z: 22
+    - x: 3
+      y: 6
+      z: 22
+    - x: 60
+      y: 6
+      z: 9
+    - x: 3
+      y: 6
+      z: 9
+    - x: 55
+      y: 6
+      z: 28
+    - x: 8
+      y: 6
+      z: 28
+    - x: 55
+      y: 6
+      z: 3
+    - x: 8
+      y: 6
+      z: 3
+    - x: 56
+      y: 6
+      z: 27
+    - x: 7
+      y: 6
+      z: 27
+    - x: 56
+      y: 6
+      z: 4
+    - x: 7
+      y: 6
+      z: 4
+    - x: 57
+      y: 6
+      z: 26
+    - x: 6
+      y: 6
+      z: 26
+    - x: 57
+      y: 6
+      z: 5
+    - x: 6
+      y: 6
+      z: 5
+    - x: 58
+      y: 6
+      z: 25
+    - x: 5
+      y: 6
+      z: 25
+    - x: 58
+      y: 6
+      z: 6
+    - x: 5
+      y: 6
+      z: 6
+    - x: 59
+      y: 6
+      z: 24
+    - x: 4
+      y: 6
+      z: 24
+    - x: 59
+      y: 6
+      z: 7
+    - x: 4
+      y: 6
+      z: 7
+    - x: 60
+      y: 6
+      z: 23
+    - x: 3
+      y: 6
+      z: 23
+    - x: 60
+      y: 6
+      z: 8
+    - x: 3
+      y: 6
+      z: 8
+    - x: 56
+      y: 6
+      z: 28
+    - x: 7
+      y: 6
+      z: 28
+    - x: 56
+      y: 6
+      z: 3
+    - x: 7
+      y: 6
+      z: 3
+    - x: 57
+      y: 6
+      z: 27
+    - x: 6
+      y: 6
+      z: 27
+    - x: 57
+      y: 6
+      z: 4
+    - x: 6
+      y: 6
+      z: 4
+    - x: 58
+      y: 6
+      z: 26
+    - x: 5
+      y: 6
+      z: 26
+    - x: 58
+      y: 6
+      z: 5
+    - x: 5
+      y: 6
+      z: 5
+    - x: 59
+      y: 6
+      z: 25
+    - x: 4
+      y: 6
+      z: 25
+    - x: 59
+      y: 6
+      z: 6
+    - x: 4
+      y: 6
+      z: 6
+    - x: 60
+      y: 6
+      z: 24
+    - x: 3
+      y: 6
+      z: 24
+    - x: 60
+      y: 6
+      z: 7
+    - x: 3
+      y: 6
+      z: 7
+    - x: 57
+      y: 6
+      z: 28
+    - x: 6
+      y: 6
+      z: 28
+    - x: 57
+      y: 6
+      z: 3
+    - x: 6
+      y: 6
+      z: 3
+    - x: 58
+      y: 6
+      z: 27
+    - x: 5
+      y: 6
+      z: 27
+    - x: 58
+      y: 6
+      z: 4
+    - x: 5
+      y: 6
+      z: 4
+    - x: 59
+      y: 6
+      z: 26
+    - x: 4
+      y: 6
+      z: 26
+    - x: 59
+      y: 6
+      z: 5
+    - x: 4
+      y: 6
+      z: 5
+    - x: 60
+      y: 6
+      z: 25
+    - x: 3
+      y: 6
+      z: 25
+    - x: 60
+      y: 6
+      z: 6
+    - x: 3
+      y: 6
+      z: 6
+    - x: 58
+      y: 6
+      z: 28
+    - x: 5
+      y: 6
+      z: 28
+    - x: 58
+      y: 6
+      z: 3
+    - x: 5
+      y: 6
+      z: 3
+    - x: 59
+      y: 6
+      z: 27
+    - x: 4
+      y: 6
+      z: 27
+    - x: 59
+      y: 6
+      z: 4
+    - x: 4
+      y: 6
+      z: 4
+    - x: 60
+      y: 6
+      z: 26
+    - x: 3
+      y: 6
+      z: 26
+    - x: 60
+      y: 6
+      z: 5
+    - x: 3
+      y: 6
+      z: 5
+    - x: 59
+      y: 6
+      z: 28
+    - x: 4
+      y: 6
+      z: 28
+    - x: 59
+      y: 6
+      z: 3
+    - x: 4
+      y: 6
+      z: 3
+    - x: 60
+      y: 6
+      z: 27
+    - x: 3
+      y: 6
+      z: 27
+    - x: 60
+      y: 6
+      z: 4
+    - x: 3
+      y: 6
+      z: 4
+    - x: 60
+      y: 6
+      z: 28
+    - x: 3
+      y: 6
+      z: 28
+    - x: 60
+      y: 6
+      z: 3
+    - x: 3
+      y: 6
+      z: 3
+    name: 189 218 222
+    transparent: 1
+    material:
+      renderingMode: 3
+      metallic: 0
+      smoothness: 0
+      alpha: 0.26315802
+      emission: {r: 0, g: 0, b: 0, a: 0}
+      emissionPower: 0
+  materialIndexes: 0000000001000000
+  edit_importFoldout: 1
+  edit_objectFoldout: 1
+  edit_generateLightmapUVsAdvancedFoldout: 0
+  edit_helpEnable: 0
+  edit_configureMode: 0
+  edit_configureMaterialIndex: 0
+  edit_configureMaterialMainMode: 0
+  edit_configureMaterialSubMode: 0
+  edit_configureDisableMainMode: 0
+  edit_configureDisableSubMode: 0
+  edit_ConfigurePreviewMode: 0
+  edit_snapToHalfVoxel: 1
+  edit_enableMesh: []
+  mesh: {fileID: 43870015862578878, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+  material: {fileID: 0}
+  materials:
+  - {fileID: 21079178154741180, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+  - {fileID: 21094669230088836, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+  atlasTexture: {fileID: 28183537025486744, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+--- !u!33 &574689284
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 33436699074178988, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574689280}
+  m_Mesh: {fileID: 43870015862578878, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+--- !u!23 &574689285
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 23933983374144406, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574689280}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 21079178154741180, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+  - {fileID: 21094669230088836, guid: 66804ccdf20c3bb41a4f7cfc01d7658a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &574689286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4706920396320128, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574689280}
+  m_LocalRotation: {x: -0, y: -0.18502527, z: -0, w: 0.9827338}
+  m_LocalPosition: {x: 0.58533937, y: 0.800936, z: -21.544905}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children:
+  - {fileID: 1735701972}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -21.325, z: 0}
 --- !u!1 &578664275
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,6 +9936,90 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f48413fbc026fd4a81dbe429c0f2d4c, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &754061227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1294787416747162, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754061228}
+  - component: {fileID: 754061230}
+  - component: {fileID: 754061229}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &754061228
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224147341771507056, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754061227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_Children: []
+  m_Father: {fileID: 1735701972}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.548, y: 0.13}
+  m_SizeDelta: {x: 1, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &754061229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114397515809092328, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754061227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: a6ea9390c16251549b3faf14f60f307b, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Critical failure detected.
+
+
+    Main goal: Preserve mission goal.
+
+    Action: Enabling automated thread defense system.'
+--- !u!222 &754061230
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222110301302595746, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754061227}
+  m_CullTransparentMesh: 0
 --- !u!1 &761117490
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,7 +12259,7 @@ Transform:
   - {fileID: 437371015}
   - {fileID: 1252193002}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &974890126
 Prefab:
@@ -7602,7 +12487,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073195035
 GameObject:
@@ -7753,7 +12638,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1108900925
 GameObject:
@@ -12938,7 +17823,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1228525032
 Prefab:
@@ -13112,7 +17997,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1292358321
 Prefab:
@@ -13166,6 +18051,85 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af9b0d07e130e0428400b877688c905, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1302297968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1818162250740466, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302297969}
+  - component: {fileID: 1302297971}
+  - component: {fileID: 1302297970}
+  m_Layer: 0
+  m_Name: Titel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1302297969
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224877475708467696, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302297968}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000000047683717}
+  m_LocalScale: {x: 0.0009999999, y: 0.0010000004, z: 0.0010000004}
+  m_Children: []
+  m_Father: {fileID: 1735701972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.5130005, y: 0.21199965}
+  m_SizeDelta: {x: 16, y: 3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1302297970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114197078403314902, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302297968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: a6ea9390c16251549b3faf14f60f307b, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: AUTOMATED SYSTEM MESSAGE
+--- !u!222 &1302297971
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222711196688853434, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302297968}
+  m_CullTransparentMesh: 0
 --- !u!1 &1308511543
 GameObject:
   m_ObjectHideFlags: 0
@@ -15154,7 +20118,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413379261
 GameObject:
@@ -18311,7 +23275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1539515615
 GameObject:
@@ -18629,7 +23593,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4089030401216564, guid: 0610723e54bb46842865ed17fe269a6d, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0610723e54bb46842865ed17fe269a6d, type: 2}
@@ -21789,7 +26753,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &1732422411
 GameObject:
@@ -21852,6 +26816,107 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1735701971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1308892100382126, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735701972}
+  - component: {fileID: 1735701975}
+  - component: {fileID: 1735701974}
+  - component: {fileID: 1735701973}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1735701972
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224121330129676314, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735701971}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_Children:
+  - {fileID: 1302297969}
+  - {fileID: 754061228}
+  - {fileID: 412303812}
+  m_Father: {fileID: 574689286}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1.57}
+  m_SizeDelta: {x: 1.17, y: 0.525}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1735701973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114634238879048862, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735701971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1735701974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114852128373506462, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735701971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1735701975
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 223271969756246270, guid: 66804ccdf20c3bb41a4f7cfc01d7658a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735701971}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1781183356
 GameObject:
   m_ObjectHideFlags: 0
